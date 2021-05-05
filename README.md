@@ -31,7 +31,7 @@ When I have the selected option, I also have the ability to translate it into an
 
 The following image shoes the web application's appearance and functionality:
 
-![This app has search option for food, language options to translate recipe, pictures that relate to the recipe and language.](assets/images/mockup.jpg)
+<img src="assets/images/mockup.JPG"> 
 
 ## APIs to be used
 
