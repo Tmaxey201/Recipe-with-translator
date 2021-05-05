@@ -4,7 +4,7 @@
  
 
 ## "Perogies in Polish" "A Danish in Danish" etc.. (you get the point)
-A web application for user's to find a recipe from a specific country, and then translate that recipe into that country's language with the option to translate it in any language. 
+A web application for users to find a recipe from a specific country, and then translate that recipe into that country's language with the option to translate it in any language. 
 
 For those who miss home, or anyone who wants to expand their cultural horizon, you can find that authentic Spaghetti Aglio e Olio that taste just like Nonna's and have it displayed in Italian as if she was reading it to you. 
 
