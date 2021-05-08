@@ -6,7 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
     
-</body>
-</html>
+    <body>
+        <p id="textField">You can translate the content of this page by selecting a language in the select box.</p>
+        <h1 id="title">My Web Page</h1>
+        <p>Hello everybody!</p>
+        <p>Translate this page:</p>
+        <form>
+            <select id="targetLanguage">
+                <option value="ZH">Chinese (Mandarin)</option>
+                <option value="CS">Czech</option>
+                <option value="DA">Danish</option>
+                <option value="NL">Dutch</option>
+                <option value="EN">English</option>
+                <option value="ET">Estonian</option>
+                <option value="FR" selected = "selected">French</option>
+            </select>
+    
+            <input type="button" id="translateButton" value="Translate" />
+        </form>
+    
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+        <script src="assets/translate.js"></script>
+    </body>
