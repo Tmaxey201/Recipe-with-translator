@@ -27,6 +27,8 @@ $.ajax({
 }) .then(function(response){
     console.log(response);
     for(i=0; i<response.ingredients.length; i++){
+        console.log(response.ingredients[i].amount.us.value);
+        console.log(response.ingredients[i].amount.us.unit);
         console.log(response.ingredients[i].name);
     }
 
