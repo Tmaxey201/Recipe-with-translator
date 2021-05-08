@@ -91,3 +91,14 @@
   .recipedetails {
       font-size: x-small;
   }
+
+
+  .centered {
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-family:'Poppins', sans-serif ;
+    font-weight: 900;
+    
+  }
