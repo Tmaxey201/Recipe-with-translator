@@ -102,3 +102,7 @@
     font-weight: 900;
     
   }
+  
+select {
+    display: inherit;
+}
