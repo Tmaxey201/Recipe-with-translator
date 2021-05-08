@@ -6,15 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+     <link rel="stylesheet" href="./assets/style.css">
     <title>Recipe Translator</title>
 </head>
-
-<body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    
+    <body>
+        <p id="textField">You can translate the content of this page by selecting a language in the select box.</p>
+        <h1 id="title">My Web Page</h1>
+        <p>Hello everybody!</p>
+        <p>Translate this page:</p>
+        <form>
+            <select id="targetLanguage">
+                <option value="ZH">Chinese (Mandarin)</option>
+                <option value="CS">Czech</option>
+                <option value="DA">Danish</option>
+                <option value="NL">Dutch</option>
+                <option value="EN">English</option>
+                <option value="ET">Estonian</option>
+                <option value="FR" selected = "selected">French</option>
+            </select>
+    
+            <input type="button" id="translateButton" value="Translate" />
+        </form>
+    
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="recipe.js"></script>
+        <script src="recipe.js"></script>
+        <script src="./assets/translate.js"></script>
 </body>
 
 </html>
