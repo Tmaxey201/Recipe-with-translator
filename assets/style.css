@@ -67,6 +67,7 @@
 .overlay2{
     margin: auto;
     margin-top: 150px;
+    margin-bottom: 150px;
     text-align:center;
     width: 54%;
     max-width: 1000px;
@@ -133,7 +134,7 @@ select {
 }
 
 .parallax-container2 {
-    height: 2000px;
+    height:80%;
   }
      
 
