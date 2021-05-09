@@ -1,8 +1,11 @@
 .title {
     font-family:'Poppins', sans-serif ;
     font-weight: 900;
+}
 
-
+.fontpoppins {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .cardpic {
@@ -38,10 +41,8 @@
     margin: auto;
     text-align:center;
     width:67%;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-family: 'Dancing Script', cursive;
-    
-    
 }
 
 .card {
@@ -54,7 +55,6 @@
     text-align:center;
     width: 54%;
     max-width: 1000px;
-    font-family: 'PT Sans', sans-serif;
     background-color: #ef5350a1;
     border-style: double;
     border-width: 3.5px;
@@ -71,7 +71,9 @@
     text-align:center;
     width: 54%;
     max-width: 1000px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    
     background-color: #ef53508c;
     border-style: double;
     border-width: 3.5px;
@@ -79,8 +81,9 @@
     border-color: white;
     padding-bottom: 20px;
 }
-#ingredients-list, #instructions{
-    font-family: 'PT Sans', sans-serif;
+#ingredients-list, #instructionsF{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: medium;
 }
 
@@ -102,7 +105,7 @@
 }
 
 .recipetitletxt{
-padding-top: 15px;
+    padding-top: 15px;
 }
 
 
@@ -126,23 +129,23 @@ padding-top: 15px;
     border-radius: 50%;
     width: 111px;
     height: 111px;
-     margin-top:11px;
+    margin-top:11px;
     margin-right: 30px;
     align-items: center;
-      }
+}
 
 .foodimg:hover {
     background-color: black ;
     opacity: .7;
-    
-  }
+    cursor:grab;
+}
   
-  .recipedetails {
+.recipedetails {
       font-size: x-small;
   }
 
 
-  .centered {
+.centered {
     position: absolute;
     top: 55%;
     left: 49%;
@@ -150,7 +153,7 @@ padding-top: 15px;
     font-family:'Poppins', sans-serif ;
     font-weight: 900;
     
-  }
+}
 
 select {
     display: inherit;
@@ -159,7 +162,7 @@ select {
 .parallax-container2 {
     height:80%;
   }
-     
+   
 
 
 
