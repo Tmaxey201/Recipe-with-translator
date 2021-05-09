@@ -85,12 +85,31 @@
    opacity: .9;
 }
 
+.card-title {
+    border-radius: 10px;
+}
+
+.card .card-image img {
+    border-radius: 7px;
+}
 .recipetitletxt {
     font-family: 'Dancing Script', cursive;
+    background-color: white;
+}
+
+.recipetitletxt{
+padding-top: 15px;
 }
 
 
+.card .card-content p {
+    margin: 20px;
+}
 
+.card .card-content {
+    padding-top: 10px;
+    
+}
 .spaceburger {
     padding-left: 16px;
 }
