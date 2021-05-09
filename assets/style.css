@@ -64,6 +64,31 @@
     padding-bottom: 20px;
 }
 
+.overlay2{
+    margin: auto;
+    margin-top: 150px;
+    text-align:center;
+    width: 54%;
+    max-width: 1000px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ef53508c;
+    border-style: double;
+    border-width: 3.5px;
+    border-radius: 10px;
+    border-color: white;
+    padding-bottom: 20px;
+}
+
+.recipecard {
+   border-radius: 10px;
+   opacity: .9;
+}
+
+.recipetitletxt {
+    font-family: 'Dancing Script', cursive;
+}
+
+
 
 .spaceburger {
     padding-left: 16px;
@@ -106,3 +131,22 @@
 select {
     display: inherit;
 }
+
+.parallax-container2 {
+    height: 2000px;
+  }
+     
+
+
+
+
+
+  
+
+
+
+              
+         
+  
+            
+  
