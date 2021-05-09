@@ -40,43 +40,41 @@
       <!-- recipe shown here within the parallax -->
 
       <div class="parallax-container parallax-container2">
-        <div class="parallax"><img src="assets/images/venice.jpg"></div>
+        <div class="parallax"><img src="assets/images/eiffel tower france.jpg"></div>
         <div class="overlay2">
           
           
-          
+          <!-- this is the displayed recipe from the API -->
           <div class="row">
             <div class="col s12 m12">
               <div class="card white darken-1 recipecard">
                 <!-- this is where your javascript should display the recipe title -->
-                <div class="card-title white recipetitletxt">Card Title</div>
+                <div class="card-title white recipetitletxt"><h2 id="recipe-title" >Card Title</h2></div>
                 <div class="card-image">
                 <div class="card-content black-text ">
   <!-- this is where the image of the recipe can go. We can use the default image even though its ugly. We will go back and work on this later -->
-                  <img class="recipeimg" src="./assets/images/ratatouille.jpg"> 
+                  <img src="./assets/images/ratatouille.jpg"> 
+                  <!-- this is where ingredients are stored -->
+                  <h3 class="recipetext">Ingredients</h3>
+                 
+                  <div id="ingredients-list" class="recipetext">
+                   
+                    <ul>
+                    </ul>
+                 
+                  </div>
                   <!-- this is where your javascript should display recipe instructions -->
-                  <p class="recipetxt">
-                     Introduction to recipe class Introduction to recipe classIntroduction to recipe classIntroduction to recipe classIntroduction to recipe classIntroduction to recipe classIntroduction to recipe class
-  <!-- this is where your javascript should display ingredients or steps. feel free to adjust these order of these containers -->
+                  <p id="instructions">
+ 
 
-                     <ul>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>ssteps in recipeteps in recipesteps in recipe</li>
-                      <li>ssteps in recipeteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>steps in recipesteps in recipesteps in recipe</li>
-                      <li>ssteps in recipeteps in recipesteps in recipe</li>
-                      <li>ssteps in recipeteps in recipesteps in recipe</li>
-                      <li>ssteps in recipeteps in recipesteps in recipe</li>
-                      
-                  </ul>
+  
+    
+        
+          
+          
+       
+        </div>
+      </div>
                   </p>
                 </div>
                 
@@ -125,6 +123,7 @@
       
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
           <script src="./assets/script.js"></script>
+          <script src="recipe.js"></script>
           
         </body>
       </html>

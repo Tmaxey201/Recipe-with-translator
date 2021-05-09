@@ -79,6 +79,10 @@
     border-color: white;
     padding-bottom: 20px;
 }
+#ingredients-list, #instructions{
+    font-family: 'PT Sans', sans-serif;
+    font-size: medium;
+}
 
 .recipecard {
    border-radius: 10px;
