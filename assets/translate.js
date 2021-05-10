@@ -14,5 +14,3 @@ $("#translateButton").click(function () {
 		$("#title").text(data.data.translations[1].translatedText);
 	});       
 });
-
-

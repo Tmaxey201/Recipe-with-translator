@@ -23,7 +23,7 @@
 
  
 <!-- drop down list content -->
-
+<!-- this is where naomi's language translation script should display to -->
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">English</a></li>
   <li><a href="#!">Spanish</a></li>
@@ -33,11 +33,11 @@
 <!-- hamburger menu nav bar button -->
 <nav>
   <div class="nav-wrapper">
-    <a href="#" id="title"class="brand-logo center">Website Name </a>
+    <a href="#" class="brand-logo center title" ><span>Website Name</span></a>
     <a class="dropdown-trigger" href="#!" data-target="dropdown1"><span class="spaceburger"><i class="fas fa-hamburger"></i></span></a>
     <ul class="left hide-on-med-and-down">
      </ul>
-  <span class="hamburgertext">Language</span>
+  <span class="hamburgertext ">Language</span>
   </div>
   
 </nav>
@@ -45,7 +45,7 @@
        <!-- parallax effect header/title area -->
     <div class="parallax-container">
         <div class="parallax"><img src="assets/images/world food.jpg"></div>
-        <div class="overlay"><h1><span class="white-text text-darken-1">A Home for Food in all Languages</span></h1></div>
+        <div class="overlay"><h1><span class="white-text text-darken-1 textlang">A Home for Food in all Languages</span></h1></div>
     </div>
   </div>
   <!-- food selector area with buttons -->
@@ -59,6 +59,11 @@
       <img class="foodimg" src="./assets/images/taco icon.JPG" onclick="yourfunction();"/>
       <img class="foodimg" src="./assets/images/Rice icon.JPG" onclick="yourfunction();"/>
       
+
+
+  
+
+
     </div>
     </div>
   </div>
@@ -85,152 +90,137 @@
             </nav>
         </div>
 <!-- a list of recipes that show up when searched -->
-        <div class="container">
-          <div class="row">
-              <div class="col s6 l4">
-                <div class="card">
-                  <div class="card-img">
-                    
-                    <img class="cardpic" src="assets/images/pasta-pomodoro.jpg" alt="">
-                    <a href="#" class="btn-floating pink pulse">
-                      <i class="material-icons">favorite</i>
-                      
-                    </a>
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Spahgetti Pomodoro</span>
-                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">More details</a>
-                    
-                  </div>
-                </div>
-              </div>
-            
-  
-              <div class="col s6 l4">
-                <div class="card">
-                  <div class="card-img">
-                    
-                    <img class="cardpic" src="assets/images/ratatouille.jpg" alt="">
-                    <a href="#" class="btn-floating pink pulse">
-                      <i class="material-icons">favorite</i>
-                      
-                    </a>
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Classic Ratatouille</span>
-                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="recipe.html">More details</a>
-                    
-                  </div>
-                </div>
-              </div>
+<!-- we can eventually add random recipe cards here to give the main page some flavor -->
+<div class="row">
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+    <!-- random recipe img -->
+        <img class="cardpic" src="assets/images/pasta-pomodoro.jpg" alt="">
+        
+       
+        <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
+      </div>
+      <div class="card-content">
+        <!-- random recipe -->
+        <span class="card-title">Spahgetti Pomodoro</span>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
+      </div>
+      <div class="card-action">
+        <a href="recipe.html">More details</a>
+    </div>
+  </div>
+</div>
 
-              <div class="col s6 l4">
-                <div class="card">
-                  <div class="card-img">
-                    
-                    <img class="cardpic" src="assets/images/ribs.jpg" alt="">
-                    <a href="#" class="btn-floating pink pulse">
-                      <i class="material-icons">favorite</i>
-                      
-                    </a>
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Oven Barbecue Ribs</span>
-                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">More details</a>
-                    
-                  </div>
-                </div>
-              </div>
-         
-  
-              <div class="col s6 l4">
-                <div class="card">
-                  <div class="card-img">
-                    
-                    <img class="cardpic" src="assets/images/street-tacos.JPG" alt="">
-                    <a href="#" class="btn-floating pink pulse">
-                      <i class="material-icons">favorite</i>
-                      
-                    </a>
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Mexican Street Tacos</span>
-                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">More details</a>
-                    
-                  </div>
-                </div>
-              </div>
-         
-  
-              <div class="col s6 l4">
-                <div class="card">
-                  <div class="card-img">
-                    
-                    <img class="cardpic" src="assets/images/kung pao chicken.JPG" alt="">
-                    <a href="#" class="btn-floating pink pulse">
-                      <i class="material-icons">favorite</i>
-                      
-                    </a>
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Kung Pao Chicken</span>
-                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">More details</a>
-                   
-                  </div>
-                </div>
-              </div>
-  
-           
-              <div class="col s6 l4">
-                <div class="card">
-                  <div class="card-img">
-                    
-                    <img class="cardpic" src="assets/images/lemon bars.JPG" alt="">
-                    <a href="#" class="btn-floating pink pulse">
-                      <i class="material-icons">favorite</i>
-                      
-                    </a>
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Easy Homemade Lemon bars</span>
-                    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">More details</a>
-                    
-                  </div>
-                </div>
-              </div>
-  
-          
+<div class="row">
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+        <img class="cardpic" src="assets/images/street-tacos.JPG" alt="">
+        
+        <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Mexican Street Tacos</span>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
+      </div>
+      <div class="card-action">
+        <a href="recipe.html">More details</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+        <img class="cardpic" src="assets/images/kung pao chicken.JPG" alt="">
+        
+        <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Kung Pao Chicken</span>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
+      </div>
+      <div class="card-action">
+        <a href="recipe.html">More details</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+        <img class="cardpic" src="assets/images/ribs.jpg" alt="">
+       
+        <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Barbecue Baked Ribs</span>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
+      </div>
+      <div class="card-action">
+        <a href="recipe.html">More details</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+        <img class="cardpic" src="assets/images/ratatouille.jpg" alt="">
+       
+        <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Ratatouille</span>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
+      </div>
+      <div class="card-action">
+        <a href="recipe.html">More details</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+        <img class="cardpic" src="assets/images/lemon bars.JPG" alt="">
+       
+        <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Homemade Lemon Bars</span>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis vero tempore. Sunt cumque dolor iste.</p>
+      </div>
+      <div class="card-action">
+        <a href="recipe.html">More details</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+          </div>
          </div>
-        </div>
-      </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="/assets/images/spice.jpeg"></div>
-        <div class="overlay2">
-           
-          
-
+       </div>
+     </div>
     </div>
   </div>
  </div>
+</div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="/assets/images/spice.jpeg"></div>
+        
+     </div>
+    </div>
+  </div>
 
   
 <!-- a footer area  -->
@@ -271,26 +261,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/script.js"></script>
+    <script src="recipe.js"></script>
     
   </body>
 </html>
 
-<!-- <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-     <link rel="stylesheet" href="./assets/style.css">
-    <title>Recipe Translator</title>
-</head>
+
+
     
-    <body>
+<!--      
         <p id="textField">You can translate the content of this page by selecting a language in the select box.</p>
-        <h1 id="title">My Web Page</h1>
-        <p>Hello everybody!</p>
-        <p>Translate this page:</p>
+        
         <form>
             <select id="targetLanguage">
                 <option value="ZH">Chinese (Mandarin)</option>
@@ -307,12 +289,12 @@
     
         
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="recipe.js"></script>
         <script src="./assets/translate.js"></script>
-</body>
+</body> -->
 
-</html> -->
+ 
 
