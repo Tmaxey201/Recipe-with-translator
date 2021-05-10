@@ -87,6 +87,18 @@
     font-size: medium;
 }
 
+.instructiontext {
+    font-size: large;
+}
+
+.recipeimg {
+   max-width: 400px;
+    height: 40%;
+    width: auto;
+    display:block;
+    margin:auto;
+}
+
 .recipecard {
    border-radius: 10px;
    opacity: .9;
