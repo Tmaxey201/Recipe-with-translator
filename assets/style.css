@@ -1,4 +1,4 @@
-#title {
+.title {
     font-family:'Poppins', sans-serif ;
     font-weight: 900;
 
@@ -50,7 +50,7 @@
 
 .overlay{
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     text-align:center;
     width: 54%;
     max-width: 1000px;
@@ -64,7 +64,52 @@
     padding-bottom: 20px;
 }
 
+.overlay2{
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align:center;
+    width: 54%;
+    max-width: 1000px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ef53508c;
+    border-style: double;
+    border-width: 3.5px;
+    border-radius: 10px;
+    border-color: white;
+    padding-bottom: 20px;
+}
 
+.recipecard {
+   border-radius: 10px;
+   opacity: .9;
+}
+
+.card-title {
+    border-radius: 10px;
+}
+
+.card .card-image img {
+    border-radius: 7px;
+}
+.recipetitletxt {
+    font-family: 'Dancing Script', cursive;
+    background-color: white;
+}
+
+.recipetitletxt{
+padding-top: 15px;
+}
+
+
+.card .card-content p {
+    margin: 20px;
+}
+
+.card .card-content {
+    padding-top: 10px;
+    
+}
 .spaceburger {
     padding-left: 16px;
 }
@@ -102,6 +147,26 @@
     font-weight: 900;
     
   }
+
 select {
     display: inherit;
 }
+
+.parallax-container2 {
+    height:80%;
+  }
+     
+
+
+
+
+
+  
+
+
+
+              
+         
+  
+            
+  
