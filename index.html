@@ -23,31 +23,68 @@
 <body>
 
 
-  <!-- drop down list content -->
-  <!-- this is where naomi's language translation script should display to -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">English</a></li>
-    <li><a href="#!">Spanish</a></li>
-    <li><a href="#!">French</a></li>
-    <li><a href="#!">Italian</a></li>
-  </ul>
-  <!-- hamburger menu nav bar button -->
-  <nav>
-    <div class="nav-wrapper">
-       <ul class="right hide-on-med-and-down fontpoppins">
-        <li><a href="sass.html">Favorites</a></li>
-        <li><a href="badges.html">About Us</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-      <a href="index.html" class="brand-logo center title font title"><span>Website Name</span></a>
-      <a class="dropdown-trigger" href="#!" data-target="dropdown1"><span class="spaceburger"><i
-            class="fas fa-hamburger"></i></span></a>
-     
-      <span class="hamburgertext ">Language</span>
+ <!-- header with language buttons -->
+ <!-- Dropdown Structure -->
+ <nav class="nav-extended">
+    
+      
+   
+  <div class="nav-wrapper">
+    <a href="index.html" class="brand-logo center title font title"><span>Website Name</span></a>   
+    
+<!-- Switch -->
+<div class="switch">
+  <label>
+   
+    <input id="check" type="checkbox" checked="checked">
+    <span class="lever"></span>
+   
+  </label>
+</div>
+
+
+  <div class="nav-wrapper hidenav">
+    
+    <div class="center-align ">
+      <img class="foodimg" src="./assets/images/united-kingdom.jpg" onclick="yourfunction();" />
+      <img class="foodimg" src="./assets/images/spain.jpg" onclick="yourfunction();" />
+      <img class="foodimg" src="./assets/images/france.jpg" onclick="yourfunction();" />
+      <img class="foodimg" src="./assets/images/italy.jpg" onclick="yourfunction();" />
+      <img class="foodimg" src="./assets/images/china.jpg" onclick="yourfunction();" />
+      
+
+
+
+
     </div>
+  </div>
+</nav>
 
-  </nav>
+  <!-- <nav class="nav-extended">
+    
+      
+   
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo center title font title"><span>Website Name</span></a>    
+    </div>
+    <div class="nav-wrapper">
+      
+      <div class="center-align">
+        <img class="foodimg" src="./assets/images/united-kingdom.jpg" onclick="yourfunction();" />
+        <img class="foodimg" src="./assets/images/spain.jpg" onclick="yourfunction();" />
+        <img class="foodimg" src="./assets/images/france.jpg" onclick="yourfunction();" />
+        <img class="foodimg" src="./assets/images/italy.jpg" onclick="yourfunction();" />
+        <img class="foodimg" src="./assets/images/china.jpg" onclick="yourfunction();" />
 
+
+
+
+
+
+      </div>
+    </div>
+  </nav> -->
+  
 
 
   <!-- parallax effect header/title area -->
@@ -62,19 +99,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="center-align">
-        <img class="foodimg" src="./assets/images/hamburger icon.JPG" onclick="yourfunction();" />
-        <img class="foodimg" src="./assets/images/spaghetti icon.JPG" onclick="yourfunction();" />
-        <img class="foodimg" src="./assets/images/Croissant icon.JPG" onclick="yourfunction();" />
-        <img class="foodimg" src="./assets/images/taco icon.JPG" onclick="yourfunction();" />
-        <img class="foodimg" src="./assets/images/Rice icon.JPG" onclick="yourfunction();" />
-
-
-
-
-
-
-      </div>
+      
     </div>
   </div>
   <div class="section white">
@@ -292,7 +317,7 @@
 
 </html>
 
-
+<!-- 
 
 
 
@@ -320,4 +345,4 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="recipe.js"></script>
         <script src="./assets/translate.js"></script>
-</body>
+</body> -->
