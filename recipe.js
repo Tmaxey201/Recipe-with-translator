@@ -11,7 +11,7 @@ frenchRecipeBtn.on('click', function(){
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
 		method: 'GET'
 	}).then(function(data){
-	   
+		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
@@ -33,7 +33,7 @@ mexicanRecipeBtn.on('click', function(){
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765',
 		method: 'GET'
 	}).then(function(data){
-		
+		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
@@ -50,7 +50,7 @@ italianRecipeBtn.on('click', function(){
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844',
 	    method: 'GET'
 	}).then(function(data){
-		
+		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
@@ -77,7 +77,7 @@ japaneseRecipeBtn.on('click', function(){
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871',
 		method: 'GET'
 	}).then(function(data){
-	
+		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
