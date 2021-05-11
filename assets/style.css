@@ -150,11 +150,12 @@ body {
     margin-top: 30px;
 }
 
-.foodimg {
+.flagimg {
     border: 1px solid rgba(0, 0, 0, 0.637);
     border-radius: 50%;
-    width: 5%;
-    height: 5%;
+    width: 3.5%;
+    height: 3.5%;
+    max-width: 90px;
      margin: 0px 10px 0px 10px ;
     align-items: center;
 }
@@ -204,9 +205,11 @@ select {
     display: inherit;
 }
 
+
 .parallax-container2 {
     height:90%;
     background-size: 100%;
+   
   }
    
 
