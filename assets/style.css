@@ -162,7 +162,7 @@ body {
 	align-items: center;
 }
 
-.foodimg:hover {
+.flagimg:hover {
 	background-color: black;
 	opacity: .7;
 	cursor: grab;
