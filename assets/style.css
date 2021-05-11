@@ -1,223 +1,221 @@
 body {
-    font-family:'Poppins', sans-serif ;
-    font-weight: 900;
-    zoom: 87%;
-  }
-.websitename {
-    font-family: 'Dancing Script', cursive;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	zoom: 87%;
 }
+
+.websitename {
+	font-family: 'Dancing Script', cursive;
+}
+
 .brand-logo {
-    font-family:'Poppins', sans-serif ;
-    font-weight: 900;
-    
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
 }
 
 .fontpoppins {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 700;
 }
 
 .cardpic {
-    width: 100% ;
-    height: 25;
+	width: 100%;
+	height: 25;
 }
 
-
 .bodytext {
-    font-family: 'Poppins', sans-serif;
-    font-size: x-large;
-    font-weight: 800;
-    text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: x-large;
+	font-weight: 800;
+	text-align: center;
 }
 
 .hamburgertext {
-    font-family: 'Poppins', sans-serif;
-    font-size: medium;
-    font-weight: 900;
+	font-family: 'Poppins', sans-serif;
+	font-size: medium;
+	font-weight: 900;
 }
 
 .footertxt {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 }
 
-.fixed-action-btn{
-    right: auto; 
-    margin-left: 5%; 
+.fixed-action-btn {
+	right: auto;
+	margin-left: 5%;
 }
+
 .searchbar {
-    max-width: 1000px;
-    margin: auto;
-    text-align:center;
-    width:67%;
-    font-family: 'Poppins', sans-serif;
-    
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	width: 67%;
+	font-family: 'Poppins', sans-serif;
 }
 
 .card {
-    display: block;
+	display: block;
 }
 
-.overlay{
-    margin: auto;
-    margin-top: 150px;
-    text-align:center;
-    width: 54%;
-    max-width: 1000px;
-    background-color: #f17472a1;
-    border-style: double;
-    border-width: 3.5px;
-    border-radius: 10px;
-    border-color: white;
-    font-family: 'Dancing Script', cursive;
-    padding-bottom: 20px;
+.overlay {
+	margin: auto;
+	margin-top: 150px;
+	text-align: center;
+	width: 54%;
+	max-width: 1000px;
+	background-color: #f17472a1;
+	border-style: double;
+	border-width: 3.5px;
+	border-radius: 10px;
+	border-color: white;
+	font-family: 'Dancing Script', cursive;
+	padding-bottom: 20px;
 }
 
-.overlay2{
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    text-align:center;
-    width: 70%;
-    max-width: 10000px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    max-width: 900px;
-    background-color:#e57373;
-    border-style: double;
-    border-width: 3.5px;
-    border-radius: 10px;
-    border-color: white;
-    padding-bottom: 20px;
+.overlay2 {
+	margin: auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	text-align: center;
+	width: 70%;
+	max-width: 10000px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	max-width: 900px;
+	background-color: #e57373;
+	border-style: double;
+	border-width: 3.5px;
+	border-radius: 10px;
+	border-color: white;
+	padding-bottom: 20px;
 }
-#ingredients-list, #instructionsF{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: medium;
+
+#ingredients-list,
+#instructionsF {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: medium;
 }
 
 .instructiontext {
-    font-size: large;
+	font-size: large;
 }
 
 .recipeimg {
-   max-width: 400px;
-    height: 40%;
-    width: auto;
-    display:block;
-    margin:auto;
+	max-width: 400px;
+	height: 40%;
+	width: auto;
+	display: block;
+	margin: auto;
 }
 
 .recipecard {
-   border-radius: 10px;
-   opacity: .9;
+	border-radius: 10px;
+	opacity: .9;
 }
 
 .card-title {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 .card .card-image img {
-    border-radius: 7px;
+	border-radius: 7px;
 }
+
 .recipetitletxt {
-    font-family: 'Dancing Script', cursive;
-    background-color: white;
+	font-family: 'Dancing Script', cursive;
+	background-color: white;
 }
 
 .recipebox {
-  background-color: black;
+	background-color: black;
 }
 
-.recipetitletxt{
-    padding-top: 15px;
+.recipetitletxt {
+	padding-top: 15px;
 }
-
 
 .card .card-content p {
-    margin: 20px;
+	margin: 20px;
 }
 
 .card .card-content {
-    padding-top: 10px;
-    
+	padding-top: 10px;
 }
+
 .spaceburger {
-    padding-left: 16px;
+	padding-left: 16px;
 }
 
 .row {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
-.foodimg {
-    border: 1px solid rgba(0, 0, 0, 0.637);
-    border-radius: 50%;
-    width: 5%;
-    height: 5%;
-     margin: 0px 10px 0px 10px ;
-    align-items: center;
+.flagimg {
+	border: 1px solid rgba(0, 0, 0, 0.637);
+	border-radius: 50%;
+	width: 3.5%;
+	height: 3.5%;
+	max-width: 90px;
+	margin: 0px 10px 0px 10px;
+	align-items: center;
 }
 
 .foodimg:hover {
-    background-color: black ;
-    opacity: .7;
-    cursor:grab;
+	background-color: black;
+	opacity: .7;
+	cursor: grab;
 }
 
 .foodimg2 {
-    border: 1px solid rgba(0, 0, 0, 0.651);
-    border-radius: 50%;
-    width: 9%;
-    height: 9%;
-     margin: 20px 10px 0px 10px ;
-    align-items: center;
-    
+	border: 1px solid rgba(0, 0, 0, 0.651);
+	border-radius: 50%;
+	width: 9%;
+	height: 9%;
+	margin: 20px 10px 0px 10px;
+	align-items: center;
 }
 
 .foodimg2:hover {
-    background-color: black ;
-    opacity: .7;
-    cursor:grab;
+	background-color: black;
+	opacity: .7;
+	cursor: grab;
 }
-  
-.recipedetails {
-      font-size: x-small;
-  }
 
+.recipedetails {
+	font-size: x-small;
+}
 
 .centered {
-    position: absolute;
-    top: 55%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    font-family:'Poppins', sans-serif ;
-    font-weight: 900;
-    
+	position: absolute;
+	top: 55%;
+	left: 49%;
+	transform: translate(-50%, -50%);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
 }
 
 #ingredients-list {
-    font-size: small;
+	font-size: small;
 }
 
 select {
-    display: inherit;
+	display: inherit;
 }
 
 .parallax-container2 {
-    height:90%;
-    background-size: 100%;
-  }
-   
-
+	height: 90%;
+	background-size: 100%;
+}
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: white !important;
-}
-.switch label input[type=checkbox]:checked+.lever {
-    background-color: white !important;
+	background-color: white !important;
 }
 
+.switch label input[type=checkbox]:checked+.lever {
+	background-color: white !important;
+}
 
 
 
