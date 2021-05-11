@@ -17,8 +17,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    </head>
    <body>
-      <!-- header with language buttons -->
-      <!-- Dropdown Structure -->
+      <!-- header with website name and navbar -->
       <nav class="nav-extended">
          <div class="nav-wrapper">
             <a href="index.html" class="brand-logo center "><span class="websitename">Well Fed & Well Read</span></a>   
@@ -28,7 +27,7 @@
                <li><a href="recipe.html">Recipes</a></li>
                <li><a href="#contacts">Contacts</a></li>
             </ul>
-            <!-- Switch -->
+            <!-- Switch to toggle language option icon bar to display and hide--> 
             <div class="switch">
                <label>
                <input id="check" type="checkbox" checked="checked">
@@ -36,6 +35,7 @@
                </label>
             </div>
             <div class="nav-wrapper hidenav">
+              <!-- language option icons with onclick function to change language of text on page -->
                <div class="center-align ">
                   <img class="flagimg" src="./assets/images/united-kingdom.jpg" onclick="yourfunction();" />
                   <img class="flagimg" src="./assets/images/spain.jpg" onclick="yourfunction();" />
@@ -53,7 +53,7 @@
       </div>
       </div>
       </div>
-      <!-- food selector area with buttons -->
+      <!-- middle section containing body content -->
       <div class="container">
          <div class="row">
          </div>
@@ -81,18 +81,16 @@
                   </div>
                </nav>
             </div>
-            <!-- a list of recipes that show up when searched -->
-            <!-- we can eventually add random recipe cards here to give the main page some flavor -->
+           <!-- A showcase of cards displaying preview of recipes available that links to the recipe page -->
             <div class="row">
                <div class="col s12 m4">
                   <div class="card">
                      <div class="card-image">
-                        <!-- random recipe img -->
                         <img class="cardpic" src="assets/images/ratatouille.jpg" alt="">
                         <a class="btn-floating halfway-fab btn-floating pink pulse"><i class="material-icons">favorite</i></a>
                      </div>
                      <div class="card-content">
-                        <!-- random recipe -->
+                       <!-- Recipe cards -->
                         <span class="card-title">Ratatouille</span>
                         <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, modi maxime, quis
                            cupiditate eveniet autem culpa doloremque praesentium quos assumenda laborum provident totam blanditiis
@@ -211,12 +209,13 @@
       </div>
       </div>
       </div>
+      <!-- Bottom parallax  -->
       <div class="parallax-container">
          <div class="parallax"><img src="assets/images/spice.jpeg"></div>
       </div>
       </div>
       </div>
-      <!-- a footer area  -->
+      <!-- this is the footer to show creators, and links to their git/socialmedia/email -->
       <footer class="page-footer">
          <div class="container">
             <div class="row">
@@ -253,6 +252,11 @@
       <script src="./assets/script.js"></script>
    </body>
 </html>
+
+<!-- THIS IS THE FRAMEWORK HTML FOR CHANGING LANGUAGES > WILL CHANGE TO FIT THEME -->
+
+
+
 <!-- 
    <p id="textField">You can translate the content of this page by selecting a language in the select box.</p>
    

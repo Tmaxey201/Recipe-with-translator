@@ -17,6 +17,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    </head>
    <body>
+     <!-- header with website name and navbar -->
       <nav class="nav-extended">
          <div class="nav-wrapper">
             <a href="index.html" class="brand-logo center"><span class="websitename">Well Fed & Well Read</span></a>
@@ -26,7 +27,7 @@
                <li><a href="recipe.html">Recipes</a></li>
                <li><a href="#contacts">Contacts</a></li>
             </ul>
-            <!-- Switch -->
+            <!-- Switch to toggle language option icon bar to display and hide-->
             <div class="switch">
                <label>
                <input id="check" type="checkbox" checked="checked">
@@ -34,6 +35,7 @@
                </label>
             </div>
             <div class="nav-wrapper hidenav">
+              <!-- language option icons with onclick function to change language of text on page -->
                <div class="center-align ">
                   <img class="flagimg" src="./assets/images/united-kingdom.jpg" onclick="yourfunction();" />
                   <img class="flagimg" src="./assets/images/spain.jpg" onclick="yourfunction();" />
@@ -43,9 +45,13 @@
                </div>
             </div>
       </nav>
+      <!-- parallax container for the background -->
       <div class="parallax-container parallax-container2">
       <div class="parallax"><img id="backgroundimg" src="assets/images/spiceboard.jpg"></div>
       <div class="overlay2">
+
+<!-- This is commented out code that Alexis wrote to showcase javascript that changes recipe -->
+
       <!-- <div class="section white">
          <div class="container">
              <div class="row container" id="recipe-space">
@@ -74,6 +80,10 @@
           <button id="greek-recipe">Greek Cuisine</button>  -->
       <!-- recipe shown here within the parallax -->
       <!-- <button id="btn">Italian Cuisine</button> -->
+
+
+      <!-- This is code Thomas wrote to replace the commented out code above  -->
+      <!-- This is a set of icons that have onclick functionality to change recipe just like alexis' code above -->
       <input type="image" src="./assets/images/Croissant icon.JPG" class="foodimg2" id="french-recipe" />
       <input type="image" src="./assets/images/spaghetti icon.JPG" class="foodimg2" id="italian-recipe" />
       <input type="image" src="./assets/images/taco icon.JPG" class="foodimg2" id="mexican-recipe" />
@@ -87,13 +97,13 @@
       <div class="card-title white recipetitletxt" id="recipe-title"></div>
       <div class="card-image">
       <div class="card-content  w black-text ">
-      <!-- this is where the image of the recipe can go. We can use the default image even though its ugly. We will go back and work on this later -->
+      <!-- this is where the image of the recipe shows -->
       <img class="recipeimg" id="recipe-img" src="./assets/images/cuttingboardknife.jpg">
-      <!-- this is where your javascript should display ingredients or steps. feel free to adjust these order of these containers -->
+      <!-- this is where the javascript displays ingredients -->
       <div id="ingredients-list">
       <ul></ul>
       </div>
-      <!-- this is where your javascript should display recipe instructions -->
+      <!-- this is where javascript displays recipe instructions -->
       <p class="recipetxt" id="instructions"></p>
       </div>
       </div>
@@ -108,6 +118,8 @@
       </div>
       </div>
       </div>
+
+      <!-- this is the footer to show creators, and links to their git/socialmedia/email -->
       <footer class="page-footer">
          <div class="container">
             <div class="row">
@@ -146,14 +158,10 @@
       <script src="recipe.js"></script>
    </body>
 </html>
-</footer>
-<!--JavaScript at end of body for optimized loading-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./assets/script.js"></script>
-<script src="recipe.js"></script>
-</body>
-</html>
+
+
+<!-- THIS IS THE FRAMEWORK HTML FOR CHANGING LANGUAGES > WILL CHANGE TO FIT THEME -->
+
 <!-- <body>
    <p id="textField">You can translate the content of this page by selecting a language in the select box.</p>
    <h1 id="title">My Web Page</h1>
