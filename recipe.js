@@ -9,6 +9,7 @@ var greekRecipeBtn = $('#greek-recipe')
 
 //RATATOUILLE RECIPE - FRANCE
 frenchRecipeBtn.on('click', function(){
+	
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
 		method: 'GET'
@@ -16,6 +17,7 @@ frenchRecipeBtn.on('click', function(){
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
+		$('#ingredients-list li').remove();
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
@@ -31,6 +33,7 @@ frenchRecipeBtn.on('click', function(){
 
 //CHICKEN ENCHILADA CASSEROLE - MEXICO
 mexicanRecipeBtn.on('click', function(){
+	
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765',
 		method: 'GET'
@@ -38,14 +41,15 @@ mexicanRecipeBtn.on('click', function(){
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
+		$('#ingredients-list li').remove();
+		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
 	})
 })
 
-// // //LASAGNE RECIPE - ITALY
+//LASAGNE RECIPE - ITALY
 italianRecipeBtn.on('click', function(){
 	
 	$.ajax({
@@ -54,6 +58,7 @@ italianRecipeBtn.on('click', function(){
 	}).then(function(data){
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
+		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
@@ -73,7 +78,7 @@ italianRecipeBtn.on('click', function(){
 	})
 })
 
-// // //YAKI UDON RECIPE - JAPAN
+//YAKI UDON RECIPE - JAPAN
 japaneseRecipeBtn.on('click', function(){
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871',
@@ -81,6 +86,7 @@ japaneseRecipeBtn.on('click', function(){
 	}).then(function(data){
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
+		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
@@ -103,6 +109,7 @@ malaysianRecipeBtn.on('click', function(){
 	}).then(function(data){
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
+		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
@@ -130,6 +137,7 @@ greekRecipeBtn.on('click', function(){
 	}).then(function(data){
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
+		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
 		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
