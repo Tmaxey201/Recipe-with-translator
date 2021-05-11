@@ -26,7 +26,7 @@ $("#translateButton").click(function () {
 	var url = "https://translation.googleapis.com/language/translate/v2";
 	//Strings requiring translation
 	url += "?q=" + escape($("#textField").text());
-	url += "&q=" + escape($("#title").text());
+	url += "&q=" + escape($(".translationtext").text());
 	//Target language
 	url += "&target=" + $("#targetLanguage").val();
 	//Replace with your API key
@@ -34,6 +34,6 @@ $("#translateButton").click(function () {
 	$.get(url, function (data, status) {
 		//Results are returned in an array following the order they were passed. 
 		$("#textField").text(data.data.translations[0].translatedText);
-		$("#title").text(data.data.translations[1].translatedText);
+		$(".translationtext").text(data.data.translations[1].translatedText);
 	});       
 });
