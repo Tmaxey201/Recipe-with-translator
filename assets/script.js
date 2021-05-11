@@ -1,15 +1,12 @@
+// Parallax function
+
 $(document).ready(function(){
     $('.parallax').parallax();
   });
 
 
-function yourfunction(){
-  console.log("hello world")
-}
-
-
-
 // jquery for switch to toggle language nav
+
 $(document).ready(function(){
   $('select').formSelect();
 });
