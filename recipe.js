@@ -7,30 +7,33 @@ var italianRecipeBtn = $('#italian-recipe');
 var japaneseRecipeBtn = $('#japanese-recipe');
 var malaysianRecipeBtn = $('#malaysian-recipe');
 var greekRecipeBtn = $('#greek-recipe')
+
+function ratatouilleRecipe() {
+	$.ajax({
+		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
+		method: 'GET'
+	}).then(function(data){
+		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
+		$('#recipe-title').text(data.meals[0].strMeal);
+		$('#instructions').text(data.meals[0].strInstructions);
+		$('#ingredients-list li').remove();
+		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
+		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
+	$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
+	})
+}
+
+$('#mainFrenchRecipe').on('click', fetch('recipe.html').then(ratatouilleRecipe));
 	
 	//RATATOUILLE RECIPE - FRANCE
-	frenchRecipeBtn.on('click', function(){
-		
-		$.ajax({
-			url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
-			method: 'GET'
-		}).then(function(data){
-			$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
-			$('#recipe-title').text(data.meals[0].strMeal);
-			$('#instructions').text(data.meals[0].strInstructions);
-			$('#ingredients-list li').remove();
-			$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
-			$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
-	})
-})
+	frenchRecipeBtn.on('click', ratatouilleRecipe);
 //changes recipe card content on main page
 $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
