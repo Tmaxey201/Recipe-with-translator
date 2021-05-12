@@ -34,9 +34,27 @@
                <span class="lever"></span>
                </label>
             </div>
-            <div class="nav-wrapper hidenav">
+            <div class="nav-wrapper center hidenav">
+               
               <!-- language option icons with onclick function to change language of text on page -->
-               <div class="center-align ">
+              <div class="input-field col s12 m6 l6">    
+            <form>
+               <select id="targetLanguage">
+                  <a class="waves-effect waves-light btn">button</a>
+
+                   <option class="translateButton" value="ZH" >Chinese (Mandarin)</option>
+                   <option class="translateButton" value="CS">Czech</option>
+                   <option class="translateButton" value="DA">Danish</option>
+                   <option  class="translateButton" value="NL">Dutch</option>
+                   <option class="translateButton" value="EN">English</option>
+                   <option class="translateButton" value="ET">Estonian</option>
+                   <option class="translateButton"value="DA" co selected = "selected">French</option>
+               </select>
+           
+               <input type="button" class="translateButton" value="Translate" />
+           </form>
+         </div>
+               <!-- <div class="center-align ">
                   
                   <img class="flagimg" src="./assets/images/united-kingdom.jpg" onclick="yourfunction();" />
                   <img class="flagimg" src="./assets/images/spain.jpg" onclick="yourfunction();" />
@@ -44,21 +62,9 @@
                   <img class="flagimg" src="./assets/images/italy.jpg" onclick="yourfunction();" />
                   <img class="flagimg" src="./assets/images/china.jpg" onclick="yourfunction();" />
                
-               </div>
+               </div> -->
             </div>
-            <form>
-              <select id="targetLanguage">
-                  <option value="ZH">Chinese (Mandarin)</option>
-                  <option value="CS">Czech</option>
-                  <option value="DA">Danish</option>
-                  <option value="NL">Dutch</option>
-                  <option value="EN">English</option>
-                  <option value="ET">Estonian</option>
-                  <option value="FR" selected = "selected">French</option>
-              </select>
-          
-              <input type="button" id="translateButton" value="Translate" />
-          </form>
+            
       </nav>
 
   
@@ -71,20 +77,8 @@
   </div>
   </div>
   <!-- middle section containing body content -->
-  <div class="container">
-    <div class="row">
-    </div>
-  </div>
-  <div class="section white">
-    <div class="container">
-      <div class="row container">
-        <p id="paragraph1" class="bodytext"> <i class="fa fa-github" aria-hidden="true"></i>
-          Search through our massive library of delicious and easy to make recipes.
-        </p>
-      </div>
-      </div>
-      </div>
-      <!-- middle section containing body content -->
+ 
+     
       <div class="container">
          <div class="row">
          </div>
@@ -231,31 +225,7 @@
   </div>
   </div>
   <!-- this is the footer to show creators, and links to their git/socialmedia/email -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 id="header5" class="footertxt" class="white-text">Created By</h5>
-          <ul id="contacts" class="footertxt">
-            <li>Thomas Maxey</li>
-            <li>Alexis Ligon</li>
-            <li>Naomi Valdovinos</li>
-          </ul>
-          <p class="footertxt" class="grey-text text-lighten-4">You can use rows and columns here to organize your
-            footer content.
-          </p>
-        </div>
-        <div class="footertxt" class="col l4 offset-l2 s12">
-          <h5 id="header" class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          </ul>
-        </div>
-      </div>
-      </div>
-      </div>
+  
       <!-- this is the footer to show creators, and links to their git/socialmedia/email -->
       <footer class="page-footer">
          <div class="container">

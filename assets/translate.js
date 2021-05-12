@@ -1,5 +1,6 @@
+
 // translation for recepie.js 
-$("#translateButton").click(function () {
+$(".translateButton").click(function () {
     
 	var url = "https://translation.googleapis.com/language/translate/v2";
 	//Strings requiring translation

@@ -1,3 +1,15 @@
+
+div.btn {
+    display: inline-block;
+    border: 2px solid #ccc;
+    margin-right: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+div.btn.on {
+    background-color: #777;
+    color: white;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 900;
@@ -200,9 +212,7 @@ body {
 	font-size: small;
 }
 
-select {
-	display: inherit;
-}
+
 
 .parallax-container2 {
 	height: 90%;
@@ -217,7 +227,9 @@ select {
 	background-color: white !important;
 }
 
-
+.democlass {
+	background-color: black;
+}
 
 
               
