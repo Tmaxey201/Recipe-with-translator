@@ -7,21 +7,6 @@ var italianRecipeBtn = $('#italian-recipe');
 var japaneseRecipeBtn = $('#japanese-recipe');
 var malaysianRecipeBtn = $('#malaysian-recipe');
 var greekRecipeBtn = $('#greek-recipe')
-
-// $('#recipeCardsMain').css('display', 'none');
-// function yourFunction(){
-// 	console.log('hello world this works')
-// }
-//code to list all countries
-// $.ajax({
-// 	url: 'https://www.themealdb.com/api/json/v1/1/list.php?a=list',
-// 	method: 'GET'
-// }).then(function(data){
-// 	console.log(data.meals.length);
-// 	for (let i = 0; i < data.meals.length; i++) {
-// 		$('#ingredients-list ul').append(`<li><button id = ${data.meals[i].strArea}>${data.meals[i].strArea}`);
-// 	}
-// })
 	
 	//RATATOUILLE RECIPE - FRANCE
 	frenchRecipeBtn.on('click', function(){
