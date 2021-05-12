@@ -20,6 +20,10 @@ $(document).on('change', '#check', function (e) {
     $(".hidenav").hide();
   }
 })
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
 //  select form method
 
 // var selectName = $('select').attr('id');
