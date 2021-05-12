@@ -5,6 +5,8 @@ $(document).ready(function(){
   });
 
 
+  $('.dropdown-trigger').dropdown();
+
 // jquery for switch to toggle language nav
 
 $(document).ready(function(){

@@ -37,11 +37,11 @@
             <div class="nav-wrapper hidenav">
               <!-- language option icons with onclick function to change language of text on page -->
                <div class="center-align ">
-                  <img class="flagimg" src="./assets/images/united-kingdom.jpg" onclick="yourfunction();" />
-                  <img class="flagimg" src="./assets/images/spain.jpg" onclick="yourfunction();" />
-                  <img class="flagimg" src="./assets/images/france.jpg" onclick="yourfunction();" />
-                  <img class="flagimg" src="./assets/images/italy.jpg" onclick="yourfunction();" />
-                  <img class="flagimg" src="./assets/images/china.jpg" onclick="yourfunction();" />
+                  <img class="flagimg" src="./assets/images/united-kingdom.jpg" id="translateButton" />
+                  <img class="flagimg" src="./assets/images/spain.jpg" id="translateButton" />
+                  <img class="flagimg" src="./assets/images/france.jpg" id="translateButton" />
+                  <img class="flagimg" src="./assets/images/italy.jpg" id="translateButton" />
+                  <img class="flagimg" src="./assets/images/china.jpg" id="translateButton" />
                </div>
             </div>
       </nav>
@@ -67,20 +67,7 @@
             </div>
          </div>
          <!-- search bar for recipes -->
-         <div class="container">
-            <div class="row">
-               <nav class="searchbar">
-                  <div class="nav-wrapper">
-                     <form>
-                        <div class="input-field">
-                           <input id="search" type="search" required>
-                           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                           <i class="material-icons">close</i>
-                        </div>
-                     </form>
-                  </div>
-               </nav>
-            </div>
+         
            <!-- A showcase of cards displaying preview of recipes available that links to the recipe page -->
             <div class="row" id="recipeCardsMain" >
                <div class="col s12 m4">
@@ -256,7 +243,7 @@
    
    <form>
        <select id="targetLanguage">
-           <option value="ZH">Chinese (Mandarin)</option>
+           <button value="ZH">Chinese (Mandarin)</button>
            <option value="CS">Czech</option>
            <option value="DA">Danish</option>
            <option value="NL">Dutch</option>
@@ -265,7 +252,7 @@
            <option value="FR" selected = "selected">French</option>
        </select>
    
-       <input type="button" id="translateButton" value="Translate" />
+       <input type="button" class="translateButton" value="Translate" />
    </form>
    
    
