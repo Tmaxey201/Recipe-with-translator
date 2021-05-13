@@ -217,7 +217,7 @@ $.ajax({
 
 $.ajax({
 	//lasagna
-	url: mealAPI + frenchID,
+	url: mealAPI + italianID,
 	method: 'GET'
 }).then(function (data) {
 	var title3 = data.meals[0].strMeal;
