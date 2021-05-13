@@ -1,3 +1,15 @@
+
+div.btn {
+    display: inline-block;
+    border: 2px solid #ccc;
+    margin-right: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+div.btn.on {
+    background-color: #777;
+    color: white;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 900;
@@ -64,7 +76,7 @@ body {
 	text-align: center;
 	width: 54%;
 	max-width: 1000px;
-	background-color: #f17472a1;
+	background-color: #f17472c9;
 	border-style: double;
 	border-width: 3.5px;
 	border-radius: 10px;
@@ -123,6 +135,10 @@ body {
 	border-radius: 7px;
 }
 
+.recipetxt {
+	padding: 20px;
+}
+
 .recipetitletxt {
 	font-family: 'Dancing Script', cursive;
 	background-color: white;
@@ -153,17 +169,14 @@ body {
 }
 
 .flagimg {
-	border: 1px solid rgba(0, 0, 0, 0.637);
-	border-radius: 50%;
-	width: 3.5%;
-	height: 3.5%;
-	max-width: 90px;
-	margin: 0px 10px 0px 10px;
+	width: 100%;
+	height: 100%;
+	max-width: 80px;
+	margin: 6px;
 	align-items: center;
 }
 
-.foodimg:hover {
-	background-color: black;
+.flagimg:hover {
 	opacity: .7;
 	cursor: grab;
 }
@@ -200,13 +213,24 @@ body {
 	font-size: small;
 }
 
-select {
-	display: inherit;
+.chip {
+	font-weight: 900;
+	color: black;
+	}
+
+.chip img{
+	width: 32px;
+	height: 32px;
 }
 
+.dropdown-content {
+	top: 23% !important;
+  }
+
 .parallax-container2 {
-	height: 90%;
-	background-size: 100%;
+	height: 100%;
+	background-size: 60%;
+	min-height: 1100px;
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
@@ -217,11 +241,36 @@ select {
 	background-color: white !important;
 }
 
-
-
-
-              
-         
+.iconspc {
+	margin: 3px;
+	margin-right: 5px;
+	font-weight: 500;
+}  
+        
+.bold2 {
+	font-weight: 900 !important;
+}
   
-            
-  
+@media screen and (max-width: 750px) {
+	.hidemedia {
+	  visibility: hidden;
+	  
+	}
+	.hidemedia1 {
+		font-size: smaller;
+		
+	  }
+  }
+  @media screen and (max-width: 388px) {
+	.hidemedia1 {
+		font-size:large;
+		
+	  }
+  }
+
+  @media screen and (max-width: 345px) {
+	.hidemedia1 {
+		font-size:medium;
+		
+	}
+}
