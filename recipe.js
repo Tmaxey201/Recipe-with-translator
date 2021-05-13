@@ -15,6 +15,9 @@ var faveThreeBtn = $('#fave-three');
 var faveFourBtn = $('#fave-four');
 var faveFiveBtn = $('#fave-five');
 var faveSixBtn = $('#fave-six');
+
+var faveRecipesArray = [];
+getFaveRecipes();
 //functions to display all recipe details
 //RATATOUILLE RECIPE - FRANCE
 function ratatouilleRecipe() {
@@ -181,12 +184,23 @@ malaysianRecipeBtn.on('click', meeGorengRecipe);
 greekRecipeBtn.on('click', lambRecipe);
 
 //when user clicks 'more details' on index.html, fetch recipe.html and load that recipe's details
-$('#moreRatDetails').on('click', fetch('recipe.html'));
-$('#moreEnchDetails').on('click', );
-$('#moreLasDetails').on('click', );
-$('#moreYakiDetails').on('click', );
-$('#moreMeeDetails').on('click', );
-$('#moreLambDetails').on('click', );
+$('#moreRatDetails').on('click', function () {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908');
+})
+$('#moreEnchDetails').on('click', function() {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765')
+});
+$('#moreLasDetails').on('click', function() {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844')});
+
+$('#moreYakiDetails').on('click', function() {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871')});
+
+$('#moreMeeDetails').on('click', function() {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53048')});
+
+$('#moreLambDetails').on('click', function() {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53010')});
 //======================================================
 //changes recipe card content on main page, displays only the image and title, with a link to more recipe details
 $.ajax({
@@ -194,10 +208,12 @@ $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
 	method: 'GET'
 }).then(function (data) {
-	$('#title1').text(data.meals[0].strMeal);
+	var title1 = data.meals[0].strMeal;
+	$('#title1').text(title1);
 	$('#card-img-1').attr('src', `${data.meals[0].strMealThumb}`);
 	faveOneBtn.on('click', function(){
-		console.log('fave 1 clicked')
+		faveRecipesArray.push(title1);
+		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
 })
 
@@ -206,10 +222,12 @@ $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765',
 	method: 'GET'
 }).then(function (data) {
-	$('#title2').text(data.meals[0].strMeal);
+	var title2 = data.meals[0].strMeal;
+	$('#title2').text(title2);
 	$('#card-img-2').attr('src', `${data.meals[0].strMealThumb}`);
 	faveTwoBtn.on('click', function(){
-		console.log('fave 2 clicked')
+		faveRecipesArray.push(title2);
+		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
 })
 
@@ -218,10 +236,12 @@ $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844',
 	method: 'GET'
 }).then(function (data) {
-	$('#title3').text(data.meals[0].strMeal);
+	var title3 = data.meals[0].strMeal;
+	$('#title3').text(title3);
 	$('#card-img-3').attr('src', `${data.meals[0].strMealThumb}`);
 	faveThreeBtn.on('click', function(){
-		console.log('fave 3 clicked')
+		faveRecipesArray.push(title3);
+		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
 })
 
@@ -230,10 +250,12 @@ $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871',
 	method: 'GET'
 }).then(function (data) {
-	$('#title4').text(data.meals[0].strMeal);
+	var title4 = data.meals[0].strMeal;
+	$('#title4').text(title4);
 	$('#card-img-4').attr('src', `${data.meals[0].strMealThumb}`);
 	faveFourBtn.on('click', function(){
-		console.log('fave 4 clicked')
+		faveRecipesArray.push(title4);
+		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
 })
 
@@ -242,10 +264,12 @@ $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53048',
 	method: 'GET'
 }).then(function (data) {
-	$('#title5').text(data.meals[0].strMeal);
+	var title5 = data.meals[0].strMeal
+	$('#title5').text(title5);
 	$('#card-img-5').attr('src', `${data.meals[0].strMealThumb}`);
 	faveFiveBtn.on('click', function(){
-		console.log('fave 5 clicked')
+		faveRecipesArray.push(title5);
+		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
 })
 
@@ -254,13 +278,29 @@ $.ajax({
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53010',
 	method: 'GET'
 }).then(function (data) {
-	$('#title6').text(data.meals[0].strMeal);
+	var title6 = data.meals[0].strMeal
+	$('#title6').text(title6);
 	$('#card-img-6').attr('src', `${data.meals[0].strMealThumb}`);
 	faveSixBtn.on('click', function(){
-		console.log('fave 6 clicked')
+		faveRecipesArray.push(title6);
+		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
 })
 //===================
+function getFaveRecipes() {
+	var faveRecipes = JSON.parse(localStorage.getItem('fave recipe'))
+	if(faveRecipes === null) {
+		return
+	} else {
+		faveRecipes = faveRecipesArray;
+		var faveRecipeList = $('#fave-list1');
+		for (i = 0; i < faveRecipesArray.length; i++) {
+			var faveRecipeLink = $('<li>');
+			faveRecipeLink.text(faveRecipesArray[i]).addClass('red-text bold2');
+			faveRecipes.append(faveRecipeLink);
+		}
+	}
+}
 
 
 
