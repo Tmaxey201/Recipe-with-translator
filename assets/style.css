@@ -156,9 +156,9 @@ body {
 	margin: 20px;
 }
 
-.card .card-content {
+/* .card .card-content {
 	padding-top: 10px;
-}
+} */
 
 .spaceburger {
 	padding-left: 16px;
@@ -213,10 +213,21 @@ body {
 	font-size: small;
 }
 
+.chip {
+	font-weight: 900;
+	color: black;
+	}
 
+.chip img{
+	width: 32px;
+	height: 32px;
+}
+
+.dropdown-content {
+	top: 23% !important;
+  }
 
 .parallax-container2 {
-	
 	height: 100%;
 	background-size: 60%;
 	min-height: 1100px;
@@ -235,5 +246,31 @@ body {
 	margin-right: 5px;
 	font-weight: 500;
 }  
-         
+        
+.bold2 {
+	font-weight: 900 !important;
+}
   
+@media screen and (max-width: 750px) {
+	.hidemedia {
+	  visibility: hidden;
+	  
+	}
+	.hidemedia1 {
+		font-size: smaller;
+		
+	  }
+  }
+  @media screen and (max-width: 388px) {
+	.hidemedia1 {
+		font-size:large;
+		
+	  }
+  }
+
+  @media screen and (max-width: 345px) {
+	.hidemedia1 {
+		font-size:medium;
+		
+	}
+}
