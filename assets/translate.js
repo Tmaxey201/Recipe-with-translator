@@ -196,91 +196,107 @@ $(".translateButton").click(function () {
 
 
 //translation for more deails in cards
-//  $(".translateButton").click(function () {
+ $(".translateButton").click(function () {
     
-//     var url = "https://translation.googleapis.com/language/translate/v2";
-//     //Strings requiring translation
-//     url += "?q=" + escape($("#details1").text());
-//     url += "&q=" + escape($(".translationtext").text());
-//     //Target language
-//     url += "&target=" + $(this).val();
-//     //Replace with your API key
-//     url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
-//     $.get(url, function (data, status) {
-//         //Results are returned in an array following the order they were passed. 
-//         $("#details1").text(data.data.translations[0].translatedText);
-//         $(".translationtext").text(data.data.translations[1].translatedText);
-//     });       
-// });
+    var url = "https://translation.googleapis.com/language/translate/v2";
+    //Strings requiring translation
+    url += "?q=" + escape($("#moreRatDetails").text());
+    url += "&q=" + escape($(".translationtext").text());
+    //Target language
+    url += "&target=" + $(this).val();
+    //Replace with your API key
+    url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
+    $.get(url, function (data, status) {
+        //Results are returned in an array following the order they were passed. 
+        $("#moreRatDetails").text(data.data.translations[0].translatedText);
+        $(".translationtext").text(data.data.translations[1].translatedText);
+    });       
+});
 
-//  $(".translateButton").click(function () {
+ $(".translateButton").click(function () {
     
-//     var url = "https://translation.googleapis.com/language/translate/v2";
-//     //Strings requiring translation
-//     url += "?q=" + escape($("#details2").text());
-//     url += "&q=" + escape($(".translationtext").text());
-//     //Target language
-//     url += "&target=" + $(this).val();
-//     //Replace with your API key
-//     url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
-//     $.get(url, function (data, status) {
-//         //Results are returned in an array following the order they were passed. 
-//         $("#details2").text(data.data.translations[0].translatedText);
-//         $(".translationtext").text(data.data.translations[1].translatedText);
-//     });       
-// });
+    var url = "https://translation.googleapis.com/language/translate/v2";
+    //Strings requiring translation
+    url += "?q=" + escape($("#moreEnchDetails").text());
+    url += "&q=" + escape($(".translationtext").text());
+    //Target language
+    url += "&target=" + $(this).val();
+    //Replace with your API key
+    url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
+    $.get(url, function (data, status) {
+        //Results are returned in an array following the order they were passed. 
+        $("#moreEnchDetails").text(data.data.translations[0].translatedText);
+        $(".translationtext").text(data.data.translations[1].translatedText);
+    });       
+});
 
-//  $(".translateButton").click(function () {
+ $(".translateButton").click(function () {
     
-//     var url = "https://translation.googleapis.com/language/translate/v2";
-//     //Strings requiring translation
-//     url += "?q=" + escape($("#details3").text());
-//     url += "&q=" + escape($(".translationtext").text());
-//     //Target language
-//     url += "&target=" + $(this).val();
-//     //Replace with your API key
-//     url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
-//     $.get(url, function (data, status) {
-//         //Results are returned in an array following the order they were passed. 
-//         $("#detials3").text(data.data.translations[0].translatedText);
-//         $(".translationtext").text(data.data.translations[1].translatedText);
-//     });       
-// });
+    var url = "https://translation.googleapis.com/language/translate/v2";
+    //Strings requiring translation
+    url += "?q=" + escape($("#moreLasDetails").text());
+    url += "&q=" + escape($(".translationtext").text());
+    //Target language
+    url += "&target=" + $(this).val();
+    //Replace with your API key
+    url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
+    $.get(url, function (data, status) {
+        //Results are returned in an array following the order they were passed. 
+        $("#moreLasDetails").text(data.data.translations[0].translatedText);
+        $(".translationtext").text(data.data.translations[1].translatedText);
+    });       
+});
 
-//  $(".translateButton").click(function () {
+ $(".translateButton").click(function () {
     
-//     var url = "https://translation.googleapis.com/language/translate/v2";
-//     //Strings requiring translation
-//     url += "?q=" + escape($("#details4").text());
-//     url += "&q=" + escape($(".translationtext").text());
-//     //Target language
-//     url += "&target=" + $(this).val();
-//     //Replace with your API key
-//     url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
-//     $.get(url, function (data, status) {
-//         //Results are returned in an array following the order they were passed. 
-//         $("#details4").text(data.data.translations[0].translatedText);
-//         $(".translationtext").text(data.data.translations[1].translatedText);
-//     });       
-// });
+    var url = "https://translation.googleapis.com/language/translate/v2";
+    //Strings requiring translation
+    url += "?q=" + escape($("#moreYakiDetails").text());
+    url += "&q=" + escape($(".translationtext").text());
+    //Target language
+    url += "&target=" + $(this).val();
+    //Replace with your API key
+    url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
+    $.get(url, function (data, status) {
+        //Results are returned in an array following the order they were passed. 
+        $("#moreYakiDetails").text(data.data.translations[0].translatedText);
+        $(".translationtext").text(data.data.translations[1].translatedText);
+    });       
+});
 
-//  $(".translateButton").click(function () {
+ $(".translateButton").click(function () {
     
-//     var url = "https://translation.googleapis.com/language/translate/v2";
-//     //Strings requiring translation
-//     url += "?q=" + escape($("#details5").text());
-//     url += "&q=" + escape($(".translationtext").text());
-//     //Target language
-//     url += "&target=" + $(this).val();
-//     //Replace with your API key
-//     url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
-//     $.get(url, function (data, status) {
-//         //Results are returned in an array following the order they were passed. 
-//         $("#details5").text(data.data.translations[0].translatedText);
-//         $(".translationtext").text(data.data.translations[1].translatedText);
-//     });       
-// });
+    var url = "https://translation.googleapis.com/language/translate/v2";
+    //Strings requiring translation
+    url += "?q=" + escape($("#moreMeeDetails").text());
+    url += "&q=" + escape($(".translationtext").text());
+    //Target language
+    url += "&target=" + $(this).val();
+    //Replace with your API key
+    url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
+    $.get(url, function (data, status) {
+        //Results are returned in an array following the order they were passed. 
+        $("#moreMeeDetails").text(data.data.translations[0].translatedText);
+        $(".translationtext").text(data.data.translations[1].translatedText);
+    });       
+});
 
+$(".translateButton").click(function () {
+    
+    var url = "https://translation.googleapis.com/language/translate/v2";
+    //Strings requiring translation
+    url += "?q=" + escape($("#moreLambDetails").text());
+    url += "&q=" + escape($(".translationtext").text());
+    //Target language
+    url += "&target=" + $(this).val();
+    //Replace with your API key
+    url += "&key=AIzaSyDRxT8PDxPBZlHDS6jq6pebU_Jqz5reBQ8";
+    $.get(url, function (data, status) {
+        //Results are returned in an array following the order they were passed. 
+        $("#moreLambDetails").text(data.data.translations[0].translatedText);
+        $(".translationtext").text(data.data.translations[1].translatedText);
+    });       
+});
 
 
 
