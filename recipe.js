@@ -183,6 +183,7 @@ $('#moreLambDetails').on('click', );
 //======================================================
 //changes recipe card content on main page, displays only the image and title, with a link to more recipe details
 $.ajax({
+	//ratatouille
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
 	method: 'GET'
 }).then(function (data) {
@@ -191,6 +192,7 @@ $.ajax({
 })
 
 $.ajax({
+	//enchilada
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765',
 	method: 'GET'
 }).then(function (data) {
@@ -199,6 +201,7 @@ $.ajax({
 })
 
 $.ajax({
+	//lasagna
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844',
 	method: 'GET'
 }).then(function (data) {
@@ -207,6 +210,7 @@ $.ajax({
 })
 
 $.ajax({
+	//yaki udon
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871',
 	method: 'GET'
 }).then(function (data) {
@@ -215,20 +219,51 @@ $.ajax({
 })
 
 $.ajax({
+	//mee goreng
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53048',
 	method: 'GET'
 }).then(function (data) {
 	$('#title5').text(data.meals[0].strMeal);
 	$('#card-img-5').attr('src', `${data.meals[0].strMealThumb}`);
 })
-//=======================================================
-
-
 
 $.ajax({
+	//lamb
 	url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53010',
 	method: 'GET'
 }).then(function (data) {
 	$('#title6').text(data.meals[0].strMeal);
 	$('#card-img-6').attr('src', `${data.meals[0].strMealThumb}`);
+})
+//===================
+//favorite button 
+var faveOneBtn = $('#fave-one');
+var faveTwoBtn = $('#fave-two');
+var faveThreeBtn = $('#fave-three');
+var faveFourBtn = $('#fave-four');
+var faveFiveBtn = $('#fave-five');
+var faveSixBtn = $('#fave-six');
+
+faveOneBtn.on('click', function(){
+	console.log('fave 1 clicked')
+})
+
+faveTwoBtn.on('click', function(){
+	console.log('fave 2 clicked')
+})
+
+faveThreeBtn.on('click', function(){
+	console.log('fave 3 clicked')
+})
+
+faveFourBtn.on('click', function(){
+	console.log('fave 4 clicked')
+})
+
+faveFiveBtn.on('click', function(){
+	console.log('fave 5 clicked')
+})
+
+faveSixBtn.on('click', function(){
+	console.log('fave 6 clicked')
 })
