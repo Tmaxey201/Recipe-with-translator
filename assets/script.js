@@ -24,6 +24,13 @@ $(document).on('change', '#check', function (e) {
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
+
+$(document).ready(function() {
+  $('.select1').toggle();
+  $(document).click(function(e) {
+$('.select1').attr('size',0);
+});
+});
 //  select form method
 
 // var selectName = $('select').attr('id');
