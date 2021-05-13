@@ -135,6 +135,10 @@ body {
 	border-radius: 7px;
 }
 
+.recipetxt {
+	padding: 20px;
+}
+
 .recipetitletxt {
 	font-family: 'Dancing Script', cursive;
 	background-color: white;
@@ -212,8 +216,10 @@ body {
 
 
 .parallax-container2 {
-	height: 90%;
-	background-size: 100%;
+	
+	height: 100%;
+	background-size: 60%;
+	min-height: 1100px;
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
@@ -230,6 +236,4 @@ body {
 	font-weight: 500;
 }  
          
-  
-            
   
