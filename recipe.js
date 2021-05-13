@@ -21,7 +21,7 @@ getFaveRecipes();
 //functions to display all recipe details
 //RATATOUILLE RECIPE - FRANCE
 function ratatouilleRecipe() {
-	
+
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908',
 		method: 'GET'
@@ -30,23 +30,20 @@ function ratatouilleRecipe() {
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list li').remove();
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
+		for (let index = 1; index <= 15; index++) {
+			var x = 'strMeasure' + index
+			var y = 'strIngredient' + index
+			if (data.meals[0][x] !== null) {
+				$('#ingredients-list ul').append(`<li>${data.meals[0][x]} ${data.meals[0][y]}`)
+			}
+		}
 		return;
 	})
 }
 
 //CHICKEN ENCHILADA CASSEROLE - MEXICO
 function enchiladaRecipe() {
-	
+
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765',
 		method: 'GET'
@@ -55,17 +52,20 @@ function enchiladaRecipe() {
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#instructions').text(data.meals[0].strInstructions);
 		$('#ingredients-list li').remove();
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
+		for (let index = 1; index <= 15; index++) {
+			var x = 'strMeasure' + index
+			var y = 'strIngredient' + index
+			if (data.meals[0][x] !== null) {
+				$('#ingredients-list ul').append(`<li>${data.meals[0][x]} ${data.meals[0][y]}`)
+			}
+		}
 		return;
 	})
 }
 
 //LASAGNE RECIPE - ITALY
 function lasagnaRecipe() {
-	
+
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844',
 		method: 'GET'
@@ -74,28 +74,20 @@ function lasagnaRecipe() {
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure11} ${data.meals[0].strIngredient11}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure12} ${data.meals[0].strIngredient12}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure13} ${data.meals[0].strIngredient13}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure14} ${data.meals[0].strIngredient14}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure15} ${data.meals[0].strIngredient15}`);
+		for (let index = 1; index <= 15; index++) {
+			var x = 'strMeasure' + index
+			var y = 'strIngredient' + index
+			if (data.meals[0][x] !== null) {
+				$('#ingredients-list ul').append(`<li>${data.meals[0][x]} ${data.meals[0][y]}`)
+			}
+		}
 		return;
 	})
 }
 
 //YAKI UDON RECIPE - JAPAN
 function yakiUdonRecipe() {
-	
+
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871',
 		method: 'GET'
@@ -104,23 +96,20 @@ function yakiUdonRecipe() {
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
+		for (let index = 1; index <= 15; index++) {
+			var x = 'strMeasure' + index
+			var y = 'strIngredient' + index
+			if (data.meals[0][x] !== null) {
+				$('#ingredients-list ul').append(`<li>${data.meals[0][x]} ${data.meals[0][y]}`)
+			}
+		}
 		return;
 	})
 }
 
 //MEE GORENG MAMAK - MALAYSIA
 function meeGorengRecipe() {
-	
+
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53048',
 		method: 'GET'
@@ -129,47 +118,35 @@ function meeGorengRecipe() {
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure11} ${data.meals[0].strIngredient11}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure12} ${data.meals[0].strIngredient12}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure13} ${data.meals[0].strIngredient13}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure14} ${data.meals[0].strIngredient14}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure15} ${data.meals[0].strIngredient15}`);
+		for (let index = 1; index <= 15; index++) {
+			var x = 'strMeasure' + index
+			var y = 'strIngredient' + index
+			if (data.meals[0][x] !== null) {
+				$('#ingredients-list ul').append(`<li>${data.meals[0][x]} ${data.meals[0][y]}`)
+			}
+		}
 		return;
 	})
 }
 //LAMB TZATZIKI BURGERS - GREECE
 function lambRecipe() {
-	
+
 	$.ajax({
 		url: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53010',
 		method: 'GET'
 	}).then(function (data) {
-		
+
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#ingredients-list li').remove();
 		$('#instructions').text(data.meals[0].strInstructions);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}`)
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}`);
-		$('#ingredients-list ul').append(`<li>${data.meals[0].strMeasure11} ${data.meals[0].strIngredient11}`);
+		for (let index = 1; index <= 15; index++) {
+			var x = 'strMeasure' + index
+			var y = 'strIngredient' + index
+			if (data.meals[0][x] !== null) {
+				$('#ingredients-list ul').append(`<li>${data.meals[0][x]} ${data.meals[0][y]}`)
+			}
+		}
 		return;
 	})
 }
@@ -187,20 +164,24 @@ greekRecipeBtn.on('click', lambRecipe);
 $('#moreRatDetails').on('click', function () {
 	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52908');
 })
-$('#moreEnchDetails').on('click', function() {
+$('#moreEnchDetails').on('click', function () {
 	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52765')
 });
-$('#moreLasDetails').on('click', function() {
-	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844')});
+$('#moreLasDetails').on('click', function () {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52844')
+});
 
-$('#moreYakiDetails').on('click', function() {
-	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871')});
+$('#moreYakiDetails').on('click', function () {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52871')
+});
 
-$('#moreMeeDetails').on('click', function() {
-	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53048')});
+$('#moreMeeDetails').on('click', function () {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53048')
+});
 
-$('#moreLambDetails').on('click', function() {
-	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53010')});
+$('#moreLambDetails').on('click', function () {
+	localStorage.setItem('recipe', 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53010')
+});
 //======================================================
 //changes recipe card content on main page, displays only the image and title, with a link to more recipe details
 $.ajax({
@@ -211,7 +192,7 @@ $.ajax({
 	var title1 = data.meals[0].strMeal;
 	$('#title1').text(title1);
 	$('#card-img-1').attr('src', `${data.meals[0].strMealThumb}`);
-	faveOneBtn.on('click', function(){
+	faveOneBtn.on('click', function () {
 		faveRecipesArray.push(title1);
 		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
@@ -225,7 +206,7 @@ $.ajax({
 	var title2 = data.meals[0].strMeal;
 	$('#title2').text(title2);
 	$('#card-img-2').attr('src', `${data.meals[0].strMealThumb}`);
-	faveTwoBtn.on('click', function(){
+	faveTwoBtn.on('click', function () {
 		faveRecipesArray.push(title2);
 		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
@@ -239,7 +220,7 @@ $.ajax({
 	var title3 = data.meals[0].strMeal;
 	$('#title3').text(title3);
 	$('#card-img-3').attr('src', `${data.meals[0].strMealThumb}`);
-	faveThreeBtn.on('click', function(){
+	faveThreeBtn.on('click', function () {
 		faveRecipesArray.push(title3);
 		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
@@ -253,7 +234,7 @@ $.ajax({
 	var title4 = data.meals[0].strMeal;
 	$('#title4').text(title4);
 	$('#card-img-4').attr('src', `${data.meals[0].strMealThumb}`);
-	faveFourBtn.on('click', function(){
+	faveFourBtn.on('click', function () {
 		faveRecipesArray.push(title4);
 		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
@@ -267,7 +248,7 @@ $.ajax({
 	var title5 = data.meals[0].strMeal
 	$('#title5').text(title5);
 	$('#card-img-5').attr('src', `${data.meals[0].strMealThumb}`);
-	faveFiveBtn.on('click', function(){
+	faveFiveBtn.on('click', function () {
 		faveRecipesArray.push(title5);
 		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
@@ -281,7 +262,7 @@ $.ajax({
 	var title6 = data.meals[0].strMeal
 	$('#title6').text(title6);
 	$('#card-img-6').attr('src', `${data.meals[0].strMealThumb}`);
-	faveSixBtn.on('click', function(){
+	faveSixBtn.on('click', function () {
 		faveRecipesArray.push(title6);
 		localStorage.setItem('fave recipe', JSON.stringify(faveRecipesArray));
 	})
@@ -289,7 +270,7 @@ $.ajax({
 //===================
 function getFaveRecipes() {
 	var faveRecipes = JSON.parse(localStorage.getItem('fave recipe'))
-	if(faveRecipes === null) {
+	if (faveRecipes === null) {
 		return
 	} else {
 		faveRecipes = faveRecipesArray;
@@ -301,10 +282,3 @@ function getFaveRecipes() {
 		}
 	}
 }
-
-
-
-
-
-
-
