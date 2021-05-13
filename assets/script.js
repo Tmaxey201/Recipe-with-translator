@@ -6,6 +6,8 @@ $(document).ready(function () {
 
 
 // $('.dropdown-trigger').dropdown();
+$('.dropdown-trigger').dropdown();
+
 
 // jquery for switch to toggle language nav
 
@@ -20,37 +22,10 @@ $(document).on('change', '#check', function (e) {
     $(".hidenav").hide();
   }
 })
-
+// sidebar mobile function
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
-
-$(document).ready(function() {
-  $('.select1').toggle();
-  $(document).click(function(e) {
-$('.select1').attr('size',0);
-});
-});
-//  select form method
-
-// var selectName = $('select').attr('id');
-
-
-// var hidden = $('<input type="hidden" id="' + selectName + '">');
-
-// hidden.val($('select').val());
-// hidden.insertAfter($('select'));
-
-// $("select option").unwrap().each(function () {
-//   var btn = $('<div class="btn">' + $(this).text() + '</div>');
-//   if ($(this).is(':checked')) btn.attr('selected','selected');
-//   $(this).replaceWith(btn);
-// });
-
-// $( ".translateButton" ).click(function() {
-//  console.log("hellowworld")
-// });
-
 
 // jquery to change background parallax picture to pair with the food
 
