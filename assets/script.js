@@ -28,10 +28,18 @@ $(document).ready(function(){
 });
 
 // jquery to change background parallax picture to pair with the food
+var url = window.location.href
+url = url.slice(url.lastIndexOf('?') + 1);
 
+console.log(window.location)
+console.log(url)
+$('#backgroundimg').attr('src', url);
+
+
+// onclick function for recipe page to change background with recipe
 $(function () {
 
-  $('#french-recipe').on('click', function () {
+  $('.french-recipe').on('click', function () {
     $('#backgroundimg').attr('src', 'assets/images/francestreet.jpg');
   });
 
