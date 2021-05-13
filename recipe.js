@@ -8,6 +8,13 @@ var japaneseRecipeBtn = $('#japanese-recipe');
 var malaysianRecipeBtn = $('#malaysian-recipe');
 var greekRecipeBtn = $('#greek-recipe')
 
+//favorite button 
+var faveOneBtn = $('#fave-one');
+var faveTwoBtn = $('#fave-two');
+var faveThreeBtn = $('#fave-three');
+var faveFourBtn = $('#fave-four');
+var faveFiveBtn = $('#fave-five');
+var faveSixBtn = $('#fave-six');
 //functions to display all recipe details
 //RATATOUILLE RECIPE - FRANCE
 function ratatouilleRecipe() {
@@ -189,6 +196,9 @@ $.ajax({
 }).then(function (data) {
 	$('#title1').text(data.meals[0].strMeal);
 	$('#card-img-1').attr('src', `${data.meals[0].strMealThumb}`);
+	faveOneBtn.on('click', function(){
+		console.log('fave 1 clicked')
+	})
 })
 
 $.ajax({
@@ -198,6 +208,9 @@ $.ajax({
 }).then(function (data) {
 	$('#title2').text(data.meals[0].strMeal);
 	$('#card-img-2').attr('src', `${data.meals[0].strMealThumb}`);
+	faveTwoBtn.on('click', function(){
+		console.log('fave 2 clicked')
+	})
 })
 
 $.ajax({
@@ -207,6 +220,9 @@ $.ajax({
 }).then(function (data) {
 	$('#title3').text(data.meals[0].strMeal);
 	$('#card-img-3').attr('src', `${data.meals[0].strMealThumb}`);
+	faveThreeBtn.on('click', function(){
+		console.log('fave 3 clicked')
+	})
 })
 
 $.ajax({
@@ -216,6 +232,9 @@ $.ajax({
 }).then(function (data) {
 	$('#title4').text(data.meals[0].strMeal);
 	$('#card-img-4').attr('src', `${data.meals[0].strMealThumb}`);
+	faveFourBtn.on('click', function(){
+		console.log('fave 4 clicked')
+	})
 })
 
 $.ajax({
@@ -225,6 +244,9 @@ $.ajax({
 }).then(function (data) {
 	$('#title5').text(data.meals[0].strMeal);
 	$('#card-img-5').attr('src', `${data.meals[0].strMealThumb}`);
+	faveFiveBtn.on('click', function(){
+		console.log('fave 5 clicked')
+	})
 })
 
 $.ajax({
@@ -234,36 +256,15 @@ $.ajax({
 }).then(function (data) {
 	$('#title6').text(data.meals[0].strMeal);
 	$('#card-img-6').attr('src', `${data.meals[0].strMealThumb}`);
+	faveSixBtn.on('click', function(){
+		console.log('fave 6 clicked')
+	})
 })
 //===================
-//favorite button 
-var faveOneBtn = $('#fave-one');
-var faveTwoBtn = $('#fave-two');
-var faveThreeBtn = $('#fave-three');
-var faveFourBtn = $('#fave-four');
-var faveFiveBtn = $('#fave-five');
-var faveSixBtn = $('#fave-six');
 
-faveOneBtn.on('click', function(){
-	console.log('fave 1 clicked')
-})
 
-faveTwoBtn.on('click', function(){
-	console.log('fave 2 clicked')
-})
 
-faveThreeBtn.on('click', function(){
-	console.log('fave 3 clicked')
-})
 
-faveFourBtn.on('click', function(){
-	console.log('fave 4 clicked')
-})
 
-faveFiveBtn.on('click', function(){
-	console.log('fave 5 clicked')
-})
 
-faveSixBtn.on('click', function(){
-	console.log('fave 6 clicked')
-})
+
