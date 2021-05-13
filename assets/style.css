@@ -76,7 +76,7 @@ body {
 	text-align: center;
 	width: 54%;
 	max-width: 1000px;
-	background-color: #f17472a1;
+	background-color: #f17472c9;
 	border-style: double;
 	border-width: 3.5px;
 	border-radius: 10px;
@@ -165,17 +165,14 @@ body {
 }
 
 .flagimg {
-	border: 1px solid rgba(0, 0, 0, 0.637);
-	border-radius: 50%;
-	width: 3.5%;
-	height: 3.5%;
-	max-width: 90px;
-	margin: 0px 10px 0px 10px;
+	width: 100%;
+	height: 100%;
+	max-width: 80px;
+	margin: 6px;
 	align-items: center;
 }
 
 .flagimg:hover {
-	background-color: black;
 	opacity: .7;
 	cursor: grab;
 }

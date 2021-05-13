@@ -20,12 +20,12 @@
      <!-- header with website name and navbar -->
      <nav class="nav-extended">
       <div class="nav-wrapper">
-         <a href="index.html" class="brand-logo center"><span class="websitename">Well Fed and Well Read</span></a>
+         <a href="index.html" class="brand-logo center"><span id="header5"class="websitename">Well Fed and Well Read</span></a>
          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Favorites</a></li>
-            <li><a href="recipe.html">Recipes</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li ><a href="sass.html"><span id="span1">Favorites</span></a></li>
+            <li><a href="recipe.html"><span id="span2">Recipes</span></a></li>
+            <li><a href="#contacts"><span id="span3">Contacts</span></a></li>
          </ul>
          <!-- Switch to toggle language option icon bar to display and hide-->
          <div class="switch">
@@ -33,27 +33,30 @@
             <input id="check" type="checkbox" checked="checked">
             <span class="lever"></span>
             </label>
+           <span id="click1">Show Language Options</span>
          </div>
          <div class="nav-wrapper hidenav">
            <!-- language option icons with onclick function to change language of text on page -->
-           <form class="#ef5350 center red lighten-2"> 
-            <select id="targetLanguage">
-               <div>
-                <option value="EN" data-icon="assets/images/united-kingdom.png" selected = "selected">English</option>
-                <option value="ZH"data-icon="assets/images/china.jpg">Chinese (Mandarin)</option>
-                <option value="CS"data-icon="assets/images/czech-republic.jpg">Czech</option>
-                <option value="DA"data-icon="assets/images/denmark.jpg">Danish</option>
-                <option value="NL"data-icon="assets/images/netherlands.jpg">Dutch</option>
-                <option value="FR"data-icon="assets/images/france.jpg">French</option>
-                <option value="ET"data-icon="assets/images/estonia.jpg">Estonian</option>
-              
-            </select>
-        
-            <a class="waves-effect waves-light btn type #ef5350 white lighten-2 " id="translateButton"><span class="#ef5350 red-text lighten-2">Translate</span></a>
-        </form>
-
-
-         </div>
+           <div class="center">
+           <input type="image" value="EN"src="./assets/images/united-kingdom.png" class="flagimg translateButton" />
+           <input type="image" value="FR"src="./assets/images/france.png" class="flagimg translateButton" />
+           <input type="image" value="ES"src="./assets/images/spain2.png" class="flagimg translateButton" />
+           <input type="image" value="NL"src="./assets/images/netherlands.png" class="flagimg translateButton" />
+           <input type="image" value="AR"src="./assets/images/arabic.png" class="flagimg translateButton" />
+           <input type="image" value="ZH"src="./assets/images/china.png" class="flagimg translateButton" />
+           <input type="image" value="DE"src="./assets/images/german.png" class="flagimg translateButton" />
+           <input type="image" value="EL"src="./assets/images/greece.png" class="flagimg translateButton" />
+           <input type="image" value="HE"src="./assets/images/israel.png" class="flagimg translateButton" />
+           <input type="image" value="HI"src="./assets/images/india.png" class="flagimg translateButton" />
+           <input type="image" value="ID"src="./assets/images/Indonesia.png" class="flagimg translateButton" />
+           <input type="image" value="IT"src="./assets/images/italy.png" class="flagimg translateButton" />
+           <input type="image" value="JA"src="./assets/images/japan.png" class="flagimg translateButton" />
+           <input type="image" value="KO"src="./assets/images/korea.png" class="flagimg translateButton" />
+           <input type="image" value="PT"src="./assets/images/Portuguese.png" class="flagimg translateButton" />
+           <input type="image" value="RU"src="./assets/images/Russia.png" class="flagimg translateButton" />
+           <input type="image" value="TH"src="./assets/images/thai.png" class="flagimg translateButton" />
+           <input type="image" value="VI"src="./assets/images/vietnam.png" class="flagimg translateButton" />
+         </div></div>
    </nav>
       <!-- parallax container for the background -->
       <div class="parallax-container parallax-container2">
@@ -132,49 +135,60 @@
       </div>
 
       <!-- this is the footer to show creators, and links to their git/socialmedia/email -->
-      <footer class="page-footer">
-         <div class="container"></div>
+     
+   <footer class="page-footer">
+      <div class="container"></div>
+      <div class="container">
+         <div class="row">
+
+
+            <div id="#contacts"class="col m6 s12 ">
+               <h5 id="contacts1"class="white-text ">Created By</h5>
+               <ul id="contacts" class="footertxt">
+                  <li> <a class="fab fa-github fa-lg black-text iconspc" href="https://github.com/Tmaxey201"></a> <a
+                        class="fas fa-envelope fa-lg white-text iconspc" href="mailto:tmaxey201@gmail.com"></a><span
+                        class="iconspc">Thomas Maxey</span></li>
+                  <li> <a class="fab fa-github fa-lg black-text iconspc" href="https://github.com/alexisligon"></a> <a
+                        class="fas fa-envelope fa-lg white-text iconspc" href="mailto:tmaxey201@gmail.com"></a><span
+                        class="iconspc">Alexis Ligon</span></li>
+                  <li> <a class="fab fa-github fa-lg black-text iconspc" href="https://github.com/Nvaldovinos"></a> <a
+                        class="fas fa-envelope fa-lg white-text iconspc" href="mailto:tmaxey201@gmail.com"></a><span
+                        class="iconspc">Naomi Valdovinos</span></li>
+               </ul>
+
+            </div>
+            <div class="col m6 s12">
+               <h5 id="contacts2" class="white-text">Created With</h5>
+               <ul>
+                  <li><a href="#!" class="white-text iconspc"> Translate API</a>
+                  </li>
+                  <li><a href="#!" class="white-text iconspc"> Recipe API</a>
+                  </li>
+                  <li><a href="#!" class="white-text iconspc"> Materialize CSS</a>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+      <div class="footer-copyright">
          <div class="container">
-            <div class="row">
-   
-   
-               <div id="#contacts"class="col m6 s12 ">
-                  <h5 class="white-text ">Created By</h5>
-                  <ul id="contacts" class="footertxt">
-                     <li> <a class="fab fa-github fa-lg black-text iconspc" href="https://github.com/Tmaxey201"></a> <a
-                           class="fas fa-envelope fa-lg white-text iconspc" href="mailto:tmaxey201@gmail.com"></a><span
-                           class="iconspc">Thomas Maxey</span></li>
-                     <li> <a class="fab fa-github fa-lg black-text iconspc" href="https://github.com/alexisligon"></a> <a
-                           class="fas fa-envelope fa-lg white-text iconspc" href="mailto:tmaxey201@gmail.com"></a><span
-                           class="iconspc">Alexis Ligon</span></li>
-                     <li> <a class="fab fa-github fa-lg black-text iconspc" href="https://github.com/Nvaldovinos"></a> <a
-                           class="fas fa-envelope fa-lg white-text iconspc" href="mailto:tmaxey201@gmail.com"></a><span
-                           class="iconspc">Naomi Valdovinos</span></li>
-                  </ul>
-   
-               </div>
-               <div class="col m6 s12">
-                  <h5 class="white-text">Created</h5>
-                  <ul>
-                     <li><a href="#!" class="white-text iconspc"> Translate API</a>
-                     </li>
-                     <li><a href="#!" class="white-text iconspc"> Recipe API</a>
-                     </li>
-                     <li><a href="#!" class="white-text iconspc"> Materialize CSS</a>
-                     </li>
-                  </ul>
-               </div>
-   
-            </div>
-   
+            © 2021 Copyright
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
          </div>
-         <div class="footer-copyright">
-            <div class="container">
-               © 2021 Copyright
-               <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-         </div>
-      </footer>
+      </div>
+   </footer>
+
+   <!--JavaScript at end of body for optimized loading-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="recipe.js"></script>
+   <script src="./assets/script.js"></script>
+   <script src="./assets/translate.js"></script>
+</body>
+
+</html>
           <!--JavaScript at end of body for optimized loading-->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -182,10 +196,6 @@
           <script src="./assets/translate.js"></script>
           <script src="recipe.js"></script>
           
-          
-        </body>
-      </html>
 
-<!-- THIS IS THE FRAMEWORK HTML FOR CHANGING LANGUAGES > WILL CHANGE TO FIT THEME -->
 
   
