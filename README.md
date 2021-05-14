@@ -3,7 +3,7 @@
 # Find Recipes and Translate the Page Into Different Languages 
  
 
-## Well Fed and Well Read
+## GLOBAL GASTRONOMY
 A web application for users to search through a recipe database and translate the webpage and recipe that is displayed into different languages.  
 
 For those who miss home, or anyone who wants to expand their cultural horizon, you can find that authentic lasagna that taste just like Nonna's and have it displayed in Italian as if she was reading it to you. 
