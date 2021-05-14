@@ -30,7 +30,7 @@ When I am exploring the page, I also have the ability to translate it into any l
 ```
 ## Mock-Up
 
-The following image shoes the web application's appearance and functionality:
+The following image shows our initial idea of the web application's appearance and functionality:
 
 <img src="assets/images/mockup.JPG"> 
 
@@ -48,4 +48,52 @@ The following image shoes the web application's appearance and functionality:
 
 ## Rough breakdown of tasks 
 
-TBD
+* Thomas - front-end and project manager
+
+* Naomi - back-end translations
+
+* Alexis - back-end recipes
+
+## Final Website Overview
+
+The following images display the final website application's appearance and functionality:
+
+<img src="assets/images/final-clip-1.JPG">
+
+* ^^This is the main page, different national flags are immediately shown on page load in order for users to select which language they want the website to be translated to. You can also toggle the display of the flags. 
+
+<img src="assets/images/final-clip-2.JPG">
+
+* ^^Six recipes are shown here to choose from, once a user has decided what they would like to cook, they click on more details to get the recipe ingredients and instructions. 
+
+<img src="assets/images/final-clip-3.JPG">
+
+* ^^A clip of one of the detailed recipes, all recipes initially load in the english language. You have the option to switch between recipes with food icons at the top. National flags are also displayed on this page in order to translate the recipe to the selected language.
+
+<img src="assets/images/final-clip-4.JPG">
+
+ * ^^This image shows the detailed recipe card translated to a different language.
+
+ ## Future Development
+ 
+ * Translate from a special character based language back to an alphabetical character based language without errors
+
+ * Change units of measurement from imperial to metric with translations
+
+ * After translation, still display ingredients as a list.
+
+ * Implement the favorite recipes function to easily access those recipes
+
+ * Overall access to more recipes from the api
+
+ * Implement multiple recipes display from various countries, instead of a selected six specific recipes
+
+ * Implement a search function for recipes
+
+ ## Links
+  
+  * <a href="https://tmaxey201.github.io/Recipe-with-translator/index.html">Global Gastronomy</a>
+
+  * <a href="https://github.com/Tmaxey201/Recipe-with-translator"> Github Repo</a>
+
+
