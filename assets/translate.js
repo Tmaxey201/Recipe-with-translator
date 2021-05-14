@@ -23,11 +23,11 @@
         //Results are returned in an array following the order they were passed. 
         $("#header5").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#header1").text());
@@ -40,11 +40,11 @@
         //Results are returned in an array following the order they were passed. 
         $("#header1").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#span1").text());
@@ -57,11 +57,11 @@
         //Results are returned in an array following the order they were passed. 
         $("#span1").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 $(".translateButton").click(function () {
-    
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#span2").text());
@@ -74,11 +74,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#span2").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 $(".translateButton").click(function () {
-    
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#span3").text());
@@ -91,12 +91,12 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#span3").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#click1").text());
@@ -109,11 +109,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#click1").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#paragraph1").text());
@@ -126,12 +126,12 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#paragraph1").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#contacts1").text());
@@ -144,11 +144,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#contacts1").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#contacts2").text());
@@ -161,7 +161,7 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#contacts2").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 
@@ -182,7 +182,7 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#instructions").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 //Gets the ID of "ingredients-list"" from recipe.html and tranlates the instructions.
@@ -200,7 +200,7 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#ingredients-list").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 
@@ -219,11 +219,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#moreRatDetails").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#moreEnchDetails").text());
@@ -236,11 +236,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#moreEnchDetails").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#moreLasDetails").text());
@@ -253,11 +253,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#moreLasDetails").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#moreYakiDetails").text());
@@ -270,11 +270,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#moreYakiDetails").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
- $(".translateButton").click(function () {
-    
+$(".translateButton").click(function () {
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#moreMeeDetails").text());
@@ -287,11 +287,11 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#moreMeeDetails").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 $(".translateButton").click(function () {
-    
+
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#moreLambDetails").text());
@@ -304,7 +304,7 @@ $(".translateButton").click(function () {
         //Results are returned in an array following the order they were passed. 
         $("#moreLambDetails").text(data.data.translations[0].translatedText);
         $(".translationtext").text(data.data.translations[1].translatedText);
-    });       
+    });
 });
 
 
@@ -316,7 +316,7 @@ $(".translateButton").click(function () {
 
 // This is previous code...  
 // $("#translateButton").click(function () {
-    
+
 // 	var url = "https://translation.googleapis.com/language/translate/v2";
 // 	//Strings requiring translation
 // 	url += "?q=" + escape($("#click2").text());
@@ -331,9 +331,3 @@ $(".translateButton").click(function () {
 // 		$(".translationtext").text(data.data.translations[1].translatedText);
 // 	});       
 // });
-
-
-
-
-   
-   

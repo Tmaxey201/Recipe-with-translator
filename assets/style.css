@@ -1,15 +1,16 @@
-
 div.btn {
-    display: inline-block;
-    border: 2px solid #ccc;
-    margin-right: 5px;
-    padding: 2px 5px;
-    cursor: pointer;
+	display: inline-block;
+	border: 2px solid #ccc;
+	margin-right: 5px;
+	padding: 2px 5px;
+	cursor: pointer;
 }
+
 div.btn.on {
-    background-color: #777;
-    color: white;
+	background-color: #777;
+	color: white;
 }
+
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 900;
@@ -26,7 +27,7 @@ body {
 }
 
 .fontpoppins {
-	font-family: 'Poppins', sans-serif; 
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 }
 
@@ -68,6 +69,11 @@ body {
 
 .card {
 	display: block;
+	border-radius: 15px;
+}
+
+.card .card-action:last-child {
+    border-radius: 0 0 5px 5px;
 }
 
 .overlay {
@@ -216,16 +222,16 @@ body {
 .chip {
 	font-weight: 900;
 	color: black;
-	}
+}
 
-.chip img{
+.chip img {
 	width: 32px;
 	height: 32px;
 }
 
 .dropdown-content {
 	top: 23% !important;
-  }
+}
 
 .parallax-container2 {
 	height: 100%;
@@ -245,32 +251,34 @@ body {
 	margin: 3px;
 	margin-right: 5px;
 	font-weight: 500;
-}  
-        
+}
+
 .bold2 {
 	font-weight: 900 !important;
 }
-  
+
 @media screen and (max-width: 750px) {
 	.hidemedia {
-	  visibility: hidden;
-	  
+		visibility: hidden;
+
 	}
+
 	.hidemedia1 {
 		font-size: smaller;
-		
-	  }
-  }
-  @media screen and (max-width: 388px) {
-	.hidemedia1 {
-		font-size:large;
-		
-	  }
-  }
 
-  @media screen and (max-width: 345px) {
+	}
+}
+
+@media screen and (max-width: 388px) {
 	.hidemedia1 {
-		font-size:medium;
-		
+		font-size: large;
+
+	}
+}
+
+@media screen and (max-width: 345px) {
+	.hidemedia1 {
+		font-size: medium;
+
 	}
 }
