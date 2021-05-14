@@ -23,7 +23,7 @@ $(document).on('change', '#check', function (e) {
   }
 })
 // sidebar mobile function
-$(document).ready(function(){
+$(document).ready(function () {
   $('.sidenav').sidenav();
 });
 
