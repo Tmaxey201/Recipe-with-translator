@@ -1,6 +1,16 @@
-//Translations for Index.html
-$(".translateButton").click(function () {
+//Translations for recepie.html, and  Index.html
 
+//translate button is used to go through the function to get the strings and APIS to be able to translate the page. 
+//String of url += "?q=" gets the ID of the text that will be translated
+//Once it gets the ID it runs the string of class translation text.
+//Then it targets "this" in order to select the target language corres
+//$(this) is a jQuery wrapper around that element that enables usage of jQuery methods.
+//After targeting "this" it runs the API key gets the ID of the text and then it runs the class of translation text
+//Then it finally translates the text into a language. 
+
+
+//For index.html
+  $(".translateButton").click(function () {
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#header5").text());
@@ -157,9 +167,9 @@ $(".translateButton").click(function () {
 
 //translation for recipe.html
 
-//get the instructions of the recepie and translates them 
-$(".translateButton").click(function () {
-
+//Gets the ID of "instructions" from recipe.html and tranlates the instructions.
+ $(".translateButton").click(function () {
+    
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#instructions").text());
@@ -175,10 +185,9 @@ $(".translateButton").click(function () {
     });
 });
 
-//Get the ingredients and translates them
-
-$(".translateButton").click(function () {
-
+//Gets the ID of "ingredients-list"" from recipe.html and tranlates the instructions.
+ $(".translateButton").click(function () {
+    
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#ingredients-list").text());
@@ -195,9 +204,9 @@ $(".translateButton").click(function () {
 });
 
 
-//translation for more deails in cards
-$(".translateButton").click(function () {
-
+//Translates "More Details"
+ $(".translateButton").click(function () {
+    
     var url = "https://translation.googleapis.com/language/translate/v2";
     //Strings requiring translation
     url += "?q=" + escape($("#moreRatDetails").text());
