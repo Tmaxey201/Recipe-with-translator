@@ -21,6 +21,11 @@ body {
 	font-family: 'Dancing Script', cursive;
 }
 
+.websitename:hover {
+	font-family: 'Dancing Script', cursive;
+	opacity: .7;
+}
+
 .brand-logo {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 900;
@@ -29,6 +34,10 @@ body {
 .fontpoppins {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
+}
+
+.textlang {
+	font-size: 4vw;
 }
 
 .cardpic {
@@ -73,7 +82,7 @@ body {
 }
 
 .card .card-action:last-child {
-    border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
 }
 
 .overlay {
@@ -161,10 +170,6 @@ body {
 .card .card-content p {
 	margin: 20px;
 }
-
-/* .card .card-content {
-	padding-top: 10px;
-} */
 
 .spaceburger {
 	padding-left: 16px;
@@ -260,25 +265,23 @@ body {
 @media screen and (max-width: 750px) {
 	.hidemedia {
 		visibility: hidden;
-
 	}
-
 	.hidemedia1 {
 		font-size: smaller;
-
 	}
 }
 
 @media screen and (max-width: 388px) {
 	.hidemedia1 {
 		font-size: large;
-
+	}
+	.textlang {
+		font-size: 8vw;
 	}
 }
 
 @media screen and (max-width: 345px) {
 	.hidemedia1 {
 		font-size: medium;
-
 	}
 }

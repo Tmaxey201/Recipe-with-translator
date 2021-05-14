@@ -310,6 +310,7 @@ $(".translateButton").click(function () {
 
 
 
+
 // NAOMI- I changed the #targetLanguage to "This" in order to select 
 //        the target language by clicking on the button this displays to
 
