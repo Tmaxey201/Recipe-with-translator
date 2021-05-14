@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 
 
-// $('.dropdown-trigger').dropdown();
+// dropdown jquery
 $('.dropdown-trigger').dropdown();
 
 
@@ -22,6 +22,7 @@ $(document).on('change', '#check', function (e) {
     $(".hidenav").hide();
   }
 })
+
 // sidebar mobile function
 $(document).ready(function () {
   $('.sidenav').sidenav();
