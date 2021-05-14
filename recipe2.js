@@ -1,4 +1,5 @@
 //url call for displaying recipe information onclick of MORE DETAILS
+//index.html --> recipe.html --> recipe information
 var url = localStorage.getItem('recipe')
 
 $.ajax({

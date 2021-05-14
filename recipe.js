@@ -8,7 +8,7 @@ var japaneseID = '52871';
 var malaysianID = '53048';
 var greekID = '53010';
 
-//variables for cuisine buttons on recipe.html
+//variables for cuisine icon buttons on recipe.html
 var frenchRecipeBtn = $('#french-recipe');
 var mexicanRecipeBtn = $('#mexican-recipe');
 var italianRecipeBtn = $('#italian-recipe');
@@ -16,16 +16,18 @@ var japaneseRecipeBtn = $('#japanese-recipe');
 var malaysianRecipeBtn = $('#malaysian-recipe');
 var greekRecipeBtn = $('#greek-recipe');
 
-//favorite button 
-var faveOneBtn = $('#fave-one');
-var faveTwoBtn = $('#fave-two');
-var faveThreeBtn = $('#fave-three');
-var faveFourBtn = $('#fave-four');
-var faveFiveBtn = $('#fave-five');
-var faveSixBtn = $('#fave-six');
+//favorite button, for future development
+// var faveOneBtn = $('#fave-one');
+// var faveTwoBtn = $('#fave-two');
+// var faveThreeBtn = $('#fave-three');
+// var faveFourBtn = $('#fave-four');
+// var faveFiveBtn = $('#fave-five');
+// var faveSixBtn = $('#fave-six');
 
-var faveRecipesArray = [];
-getFaveRecipes();
+// var faveRecipesArray = [];
+// getFaveRecipes();
+
+
 //functions to display all recipe details
 //RATATOUILLE RECIPE - FRANCE
 function ratatouilleRecipe() {
@@ -133,12 +135,10 @@ function meeGorengRecipe() {
 }
 //LAMB TZATZIKI BURGERS - GREECE
 function lambRecipe() {
-
 	$.ajax({
 		url: mealAPI + greekID,
 		method: 'GET'
 	}).then(function (data) {
-
 		$('#recipe-img').attr('src', `${data.meals[0].strMealThumb}`);
 		$('#recipe-title').text(data.meals[0].strMeal);
 		$('#ingredients-list li').remove();
@@ -153,9 +153,8 @@ function lambRecipe() {
 		return;
 	})
 }
-
 //==================================================================
-//when user clicks on icon button on recipe.html change the recipe display to ratatouille recipe
+//when user clicks on food icon button on recipe.html change the recipe display to ratatouille recipe
 frenchRecipeBtn.on('click', ratatouilleRecipe);
 mexicanRecipeBtn.on('click', enchiladaRecipe);
 italianRecipeBtn.on('click', lasagnaRecipe);
@@ -163,7 +162,7 @@ japaneseRecipeBtn.on('click', yakiUdonRecipe);
 malaysianRecipeBtn.on('click', meeGorengRecipe);
 greekRecipeBtn.on('click', lambRecipe);
 
-//when user clicks 'more details' on index.html, fetch recipe.html and load that recipe's details
+//when user clicks 'more details' on index.html, load recipe details on recipe.html
 $('#moreRatDetails').on('click', function () {
 	localStorage.setItem('recipe', mealAPI + frenchID);
 })
@@ -271,17 +270,19 @@ $.ajax({
 	})
 })
 //===================
-function getFaveRecipes() {
-	var faveRecipes = JSON.parse(localStorage.getItem('fave recipe'))
-	if (faveRecipes === null) {
-		return
-	} else {
-		faveRecipes = faveRecipesArray;
-		var faveRecipeList = $('#fave-list1');
-		for (i = 0; i < faveRecipesArray.length; i++) {
-			var faveRecipeLink = $('<li>');
-			faveRecipeLink.text(faveRecipesArray[i]).addClass('red-text bold2');
-			faveRecipes.append(faveRecipeLink);
-		}
-	}
-}
+//Beginning code for favorite recipes option, didn't quite get it to work in time, something to work on in the future.
+
+// function getFaveRecipes() {
+// 	var faveRecipes = JSON.parse(localStorage.getItem('fave recipe'))
+// 	if (faveRecipes === null) {
+// 		return
+// 	} else {
+// 		faveRecipes = faveRecipesArray;
+// 		var faveRecipeList = $('#fave-list1');
+// 		for (i = 0; i < faveRecipesArray.length; i++) {
+// 			var faveRecipeLink = $('<li>');
+// 			faveRecipeLink.text(faveRecipesArray[i]).addClass('red-text bold2');
+// 			faveRecipesList.append(faveRecipeLink);
+// 		}
+// 	}
+// }
