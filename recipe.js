@@ -271,6 +271,7 @@ $.ajax({
 })
 //===================
 //Beginning code for favorite recipes option, didn't quite get it to work in time, something to work on in the future.
+//Would like for recipe title to display as a dropdown list from favorite recipes button at top. When a user clicks on that recipe title, it displays the recipe details.
 
 // function getFaveRecipes() {
 // 	var faveRecipes = JSON.parse(localStorage.getItem('fave recipe'))
