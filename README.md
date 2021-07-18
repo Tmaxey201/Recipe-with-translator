@@ -1,5 +1,11 @@
 # Recipe-with-translator
 
+<br>
+## My Role In This Project
+
+I was tasked to create the entire front end design and interface using HTML, Materalize.CSS, Pure CSS, and Javascript.
+This was the first time I used a CSS framework and I learned quite a bit from the entire process. 
+
 # Find Recipes and Translate the Page Into Different Languages 
  
 
