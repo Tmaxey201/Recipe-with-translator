@@ -1,4 +1,14 @@
 # Recipe-with-translator
+<br>
+
+
+ ## Links
+  
+  * <a href="https://tmaxey201.github.io/Recipe-with-translator/index.html">Global Gastronomy</a>
+
+  * <a href="https://github.com/Tmaxey201/Recipe-with-translator"> Github Repo</a>
+
+
 
 <br>
 
