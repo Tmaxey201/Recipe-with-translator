@@ -1,6 +1,7 @@
 # Recipe-with-translator
 
 <br>
+
 ## My Role In This Project
 
 I was tasked to create the entire front end design and interface using HTML, Materalize.CSS, Pure CSS, and Javascript.
